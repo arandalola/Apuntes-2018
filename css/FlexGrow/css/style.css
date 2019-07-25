@@ -1,0 +1,87 @@
+.grow{
+	display:flex;
+	flex-grow:2;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+	transition-duration:3s;
+}
+main .grow div{
+	height:500px;
+	flex-grow:1;
+}
+main .grow:hover div{
+	flex-grow:3;
+}
+.caja1{
+	background:#ff6666;
+}
+.caja1:hover{
+	background:linear-gradient(to left, #ff6666, #fF0000);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}
+.caja2{
+	background:#ff8c66;
+}
+.caja2:hover{
+	background:linear-gradient(to left, #ff8c66, #ff4000);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}
+.caja3{
+	background:#ffb366;
+}
+.caja3:hover{
+	background:linear-gradient(to left, #ffb366, #ff8000);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}
+.caja4{
+	background:#ffd966;
+}
+.caja4:hover{
+	background:linear-gradient(to left, #ffd966, #ffbf00);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}
+.caja5{
+	background:#FFFF66;
+}
+.caja5:hover{
+	background:linear-gradient(to left, #FFFF66, #ffff00);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}
+.caja6{
+	background:#d9ff66;
+}
+.caja6:hover{
+	background:linear-gradient(to left, #d9ff66, #bfff00);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}
+.caja7{
+	background:#b3ff66;
+}
+.caja7:hover{
+	background:linear-gradient(to left, #b3ff66, #80ff00);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}
+.caja8{
+	background:#8cff66;
+}
+.caja8:hover{
+	background:linear-gradient(to left, #8cff66, #40ff00);
+	flex-grow:8;
+	transform:rotate(180deg);
+	transition-duration:4s;
+}

@@ -1,0 +1,249 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.contenedor{
+	background-color:green;
+	display:flex;
+	/* flex-wrap:wrap; *//*Sirve para que los elementos tengan exactamente la medida que le damos, nowrap es el valor por defecto. */
+	flex-wrap:wrap-reverse;/*Sirve para cambiar los elementos de arriba a abajo.*/
+}
+.contenedor>div{
+	width:25%;
+	margin-left:2%;
+	height:100px;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo{
+	margin-right:2%;
+}
+.contenedor1{
+	background-color:cyan;
+	display:flex;
+	/* justify-content:center; *//*Sirve para centrar los elemnetos dentro del contenedor con display:flex;*/
+	/* justify-content:flex-start; *//*Alineado a la derecha*/
+	/* justify-content:flex-end; *//*Alineado a la izquierda*/
+	/* justify-content:space-between; */ /*Reparte el espacio para colocar los elementos*/
+	justify-content:space-around;/*Reparte el espacio para colocar los elementos con espacio en la derecha y la izquierda*/
+}
+.contenedor1>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo1{
+	margin-right:2%;
+}
+.contenedor2{
+	background-color:brown;
+	display:flex;
+	justify-content:center;/*Sirve para centrar los elemnetos dentro del contenedor con display:flex;*/
+}
+.contenedor2>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo2{
+	margin-right:2%;
+}
+.contenedor3{
+	background-color:red;
+	display:flex;
+	justify-content:flex-start;/*Alineado a la derecha*/
+}
+.contenedor3>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo3{
+	margin-right:2%;
+}
+.contenedor4{
+	background-color:orange;
+	display:flex;
+	justify-content:flex-end;/*Alineado a la izquierda*/
+}
+.contenedor4>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo4{
+	margin-right:2%;
+}
+.contenedor5{
+	background-color:yellow;
+	display:flex;
+	justify-content:space-between; /*Reparte el espacio para colocar los elementos*/
+}
+.contenedor5>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo5{
+	margin-right:2%;
+}
+.contenedor6{
+	background-color:violet;
+	display:flex;
+	flex-direction:row;/*Valor por defecto*/
+}
+.contenedor6>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo6{
+	margin-right:2%;
+}
+.contenedor7{
+	background-color:black;
+	display:flex;
+	flex-direction:row-reverse;/*Coloca los elementos al lado contrario como un espejo*/
+}
+.contenedor7>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo7{
+	margin-right:2%;
+}
+.contenedor8{
+	background-color:silver;
+	display:flex;
+	flex-direction:column;/*Coloca los elementos en columna*/
+}
+.contenedor8>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo8{
+	margin-right:2%;
+}
+.contenedor9{
+	background-color:magenta;
+	display:flex;
+	flex-direction:column-reverse;/*Coloca los elementos en columna al lado contrario como un espejo*/
+}
+.contenedor9>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo9{
+	margin-right:2%;
+}
+.contenedor10{
+	height:200px;
+	background-color:yellow;
+	display:flex;
+	align-items:center;/*centra verticalmente*/
+}
+.contenedor10>div{
+	width:100px;
+	height:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo10{
+	margin-right:2%;
+}
+.contenedor11{
+	height:200px;
+	background-color:green;
+	display:flex;
+	align-items:strecth;/*valor por defecto, hace que los elementos sean tan altos como su contenedor*/
+}
+.contenedor11>div{
+	width:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo11{
+	margin-right:2%;
+}
+.contenedor12{
+	height:200px;
+	background-color:brown;
+	display:flex;
+	align-items:flex-start;/*se colocan arriba, en el margen superior del contenedor*/
+}
+.contenedor12>div{
+	width:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo12{
+	margin-right:2%;
+}
+.contenedor13{
+	height:200px;
+	background-color:cyan;
+	display:flex;
+	align-items:flex-end;/*se colocan abajo, en el margen inferior del contenedor*/
+}
+.contenedor13>div{
+	width:100px;
+	margin-left:2%;
+	background-color:blue;
+	font-size:100px;
+	color:white;
+	text-align:center;
+}
+.ultimo13{
+	margin-right:2%;
+}

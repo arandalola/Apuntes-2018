@@ -1,0 +1,172 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background-image:url("../imagenes/matrix3.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center center;
+	background-size:cover;
+}
+header{
+	background-image:url("../imagenes/matrix3.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center center;
+	background-size:cover;
+	position:fixed;
+	width:100%;
+}
+.logo{
+	width:150px;
+	height:150px;
+	margin:20px 0 20px 20px;
+	background:url("../imagenes/logo.png") no-repeat;
+	background-size:cover;
+	border-radius:300px;
+}
+.logo:hover{
+	background:url("../imagenes/logom.png")no-repeat;
+	background-size:cover;
+	box-shadow:0px 0px 30px 10px #e9c23e;
+}
+header nav ul{
+	list-style:none;
+}
+nav .menu li a{
+	display:block;/*obligatorio*/
+	padding:5px 0;/*obligatorio*/
+	text-decoration:none;
+	color:black;
+	font-weight:bolder;
+	font-size:20px;
+}
+nav .menu li a:hover{/*cambio de aspecto*/
+	color:black;
+	box-shadow: 5px -5px #026b3b;
+	border-radius:20px 20px 20px 20px;
+}
+nav .menu>li{
+	float:left;/*obligatorio*/
+	width:24%;/*obligatorio*/
+	text-align:center;/*obligatorio*/
+	background-color:#e9c23e;
+	margin:0 0.5% 1%;
+	border-radius:20px 20px 20px 20px;
+}
+nav .menu li ul{
+	display:none;/*obligatorio*/
+}
+nav .menu>li:hover>ul{/*1º submenú*/
+	display:block;/*obligatorio*/
+	position:absolute;/*obligatorio*/
+	width:24%;/*obligatorio*/
+}
+nav .menu>li li:hover ul{/*2º submenú*/
+	display:block;/* todo obligatorio*/
+	position:absolute;
+	left:100%;
+	top:74px;
+	width:100%;
+}
+nav .menu .izquierda li:hover ul{/*para desplegar un submenú a la izquierda*/
+	left:auto;
+	right:100%;
+}
+.espacio{
+	background-color:#e9c23e;
+	margin-bottom:1%;
+	margin-top:1%;
+	border-radius:20px 20px 20px 20px;
+}
+.slider{
+	width:100%;
+	height:500px;
+	padding-top:204px;
+}
+.contenido{
+	width:1080px;
+	margin:0 auto;
+}
+.texto1{
+	padding:30px;
+	width:300px;
+	float:left;
+	margin-left:54px;
+	margin-top:60px;
+	background-color:#e9c23e;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:20px 20px 20px 20px;
+}
+.texto1:hover{
+	box-shadow:0px 0px 30px 10px #e9c23e;
+}
+.texto2{
+	padding:30px;
+	width:300px;
+	float:left;
+	margin:60px 0 60px 54px;
+	background-color:#e9c23e;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:20px 20px 20px 20px;
+}
+.texto2:hover{
+	box-shadow:0px 0px 30px 10px #e9c23e;
+}
+.texto3{
+	padding:30px;
+	width:300px;
+	float:left;
+	margin:60px 0 60px 54px;
+	background-color:#e9c23e;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:20px 20px 20px 20px;
+}
+.texto3:hover{
+	box-shadow:0px 0px 30px 10px #e9c23e;
+}
+.icono1{
+	float:left;
+	padding-right:10px;
+}
+.icono2{
+	text-align:center;
+}
+.icono3{
+	float:right;
+	background-color:black;
+	border-radius:20px 20px 20px 20px;
+}
+.icono{
+	width:150px;
+	height:150px;
+	border-radius:10px 10px 10px 10px;
+}
+.flecha{
+	width:50px;
+	height:50px;
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	background:url("../imagenes/flecha.png") no-repeat;
+	background-size:cover;
+	border-radius:100px;
+}
+.flecha:hover{
+	background:url("../imagenes/flecham.png") no-repeat;
+	background-size:cover;
+	box-shadow:0px 0px 30px 10px #e9c23e;
+}
+.redes{
+	position:fixed;
+	top:515px;
+	left:20px;
+}
+.redes:hover{
+	box-shadow:0px 0px 30px 10px #e9c23e;
+}

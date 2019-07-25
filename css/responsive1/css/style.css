@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	outline:none;
+	font-family: 'Bitter', serif;
+	border-radius:5px;
+}
+body{
+	background-image:url("../imagenes/images.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+h1{
+	text-align:center;
+	text-decoration:underline;
+	margin:10px 0;
+}
+main form>div{
+	width:80%;
+	padding:20px 20px;
+	margin:20px auto;
+	background-image:url("../imagenes/textura.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+fieldset{
+	padding:10px;
+	background:#dff0bc;
+}
+label{
+	font-weight:bold;
+	padding-right:15px;
+}
+legend{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:15px;
+}
+select{
+	margin-right:10px;
+}
+textarea{
+	width:80%;
+	resize:none;/*para que la opción de modificar el campo sea fijo y no cambie.*/
+	background:#fbfdde;
+} 
+input, select{
+	background:#fbfdde;
+}
+select, input, textarea{
+	padding:4px;
+	}
+.datos div, .direccion div, .foto div, .aficiones div, .estado div, .contacto div, .observaciones div, .fin div{
+	display:flex;
+	justify-content:space-around;
+}
+.dire{
+	margin-bottom:15px;
+}
+.aficiones div, .estado div{
+	width:100%;
+}
+.aficiones input, .estado input{
+	margin-top:6px;
+}
+.fin{
+	text-align:center;
+}
+.fin input{
+	width:40%;
+	font-size:15px;
+	font-weight:bold;
+	cursor:pointer;
+}
+.fin input:hover{
+	background:#9fc185;
+}
+@media screen and (max-width:1103px){
+	*{
+		flex-wrap:wrap;
+		width:100%;
+	}
+	select, input{
+		height:35px;
+	}
+	select{
+		padding:0px;
+		margin-right:0px;
+		margin-bottom:5px;
+	}
+	legend{
+		width:auto;
+	}
+	label{
+		margin:5px 0;
+		text-indent:15px;
+	}
+	.aficiones label, .estado label{
+		text-align:center;
+	}
+	.aficiones label, .aficiones input, .estado label, .estado input{
+		display:block;
+		width:50%;
+		height:auto;
+	}
+	.foto input{
+		padding:7px;
+	}
+}

@@ -1,0 +1,156 @@
+#difright{
+	width:400px; /*ancho de la caja*/
+	height:250px; /*alto de la caja*/
+	border:solid; /*estilo del borde de la caja*/
+	margin:100px auto 100px; /*borde exterior de la caja*/
+	box-shadow:20px 20px 30px #000;/*sombreado right inferior de la caja*//*1px desplaza a la derecha - 2px desplaza abajo - 3px densidad difuminado - 4px color del difuminado*/ 
+}
+#difleft{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:-20px 20px 30px #000;/*sombreado left inferior de la caja*/
+}
+#diftopr{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:20px -20px 30px #000;/*sombreado top right de la caja*/
+}
+#diftopl{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:-20px -20px 30px #000;/*sombreado top left de la caja*/
+}
+#difred{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:20px 20px 30px #000;
+	border-radius:15px 15px 15px 15px; /*redondeo de las equinas de la caja*/
+}
+#difcir{
+	width:500px;
+	height:500px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:0px 0px 30px #000; /*difumina toda la caja*/
+	border-radius:250px; /*utilizamos sólo un valor para que realice un círculo. */
+}
+#difluna{
+	background:#000;
+	width:400px;
+	height:400px;
+	border:1px solid;
+	margin:100px auto 100px;
+	box-shadow:-50px 8px 5px 5px #FFF; 
+	border-radius:200px;
+}
+#difluna1{
+	background:#000;
+	width:400px;
+	height:400px;
+	border:1px solid;
+	margin:100px auto 100px;
+	box-shadow:50px 8px 5px 5px #FFF; 
+	border-radius:200px; 
+}
+.cielo{
+	background:#000;
+	width:600px;
+	height:600px;
+	margin:100px auto 100px;
+	padding-top:30px;
+	border-radius:300px;
+}
+#difllena{
+	background-image:url("../imagenes/luna.jpg");
+	background-size:cover;
+	background-position:center;
+	width:700px;
+	height:700px;
+	margin:100px auto 100px; 
+	box-shadow:0px 0px 20px 35px #cecfd3;
+	border-radius:350px; 
+}
+#difsol{
+	background-image:url("../imagenes/sol.jpg");
+	background-size:cover;
+	background-position:center;
+	width:700px;
+	height:700px;
+	margin:100px auto 100px;
+	box-shadow:0px 0px 20px 35px #f7bd0c91; 
+	border-radius:350px; 
+}
+#grey{
+	background-color:grey;
+	width:400px;
+	height:1000px;
+	border:5px solid #000;
+	margin:70px auto 0px;
+	padding-top:120px;
+	box-shadow:0px 0px 50px 50px #000 inset;
+	border-radius:120px 120px 120px 120px;
+}
+#red{
+	background-image:url("../imagenes/semaforo.jpg");
+	background-size:cover;
+	background-position:center;
+	width:200px;
+	height:200px;
+	border:2.5px solid #000;
+	margin:0px auto;
+	box-shadow:0px 20px 20px #000 inset;
+	border-radius:100px;
+}
+#orange{
+	background-image:url("../imagenes/semaforo.jpg");
+	background-size:cover;
+	background-position:center;
+	width:200px;
+	height:200px;
+	border:2.5px solid #000;
+	margin:150px auto;
+	box-shadow:0px 20px 20px #000 inset;
+	border-radius:100px;
+}
+#green{
+	background-image:url("../imagenes/semaforo.jpg");
+	background-size:cover;
+	background-position:center;
+	width:200px;
+	height:200px;
+	border:2.5px solid #000;
+	margin:150px auto;
+	box-shadow:0px 20px 20px #000 inset;
+	border-radius:100px;
+}
+#palo{
+	background-color:grey;
+	width:200px;
+	height:1000px;
+	border:5px solid #000;
+	margin:0px auto;
+	padding-top:120px;
+	box-shadow:0px 0px 50px 50px #000 inset;
+}
+#red:hover{
+	background-image:url("../imagenes/rojo.jpg");
+}
+#orange:hover{
+	background-image:url("../imagenes/naranja.jpg");
+}
+#green:hover{
+	background-image:url("../imagenes/verde.jpg");
+}	
+
+
+
+
+

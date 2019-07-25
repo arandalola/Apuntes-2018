@@ -1,0 +1,127 @@
+@media screen and (max-width:800px){
+	/*WEB HORIZONTAL Y VERTICAL*/
+	.hVertical{ /*.hHorizontal{EN COMENTARIO EL MENU QUE NO SE UTILICE EN EL HTML. VERTICAL O HORIZONTAL */
+		display:none;
+	}
+	/* .hHamburguesa{
+		display:block;
+		position:fixed;
+		width: 100%;
+		z-index:99999;
+	}
+	.hamburguesa{
+		z-index:9999;
+	} */
+	nav.click{
+		height:100vh;
+		width:100%;
+		background-color:#3f51b5;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		position:absolute;
+		text-align:center;
+	}
+	.navzindex{
+		z-index:8888;
+	}
+	/* .logo{
+		float:right;
+		padding:0;
+		margin:15px;
+	} */
+	.slider{
+		display:none;
+	}
+	aside{
+		display:none;
+	}
+	.flipper1{
+		display:none;
+	}
+	.girar, .flipper2, .flipper{
+		height:auto;
+	}
+	.flipper2 .front, .flipper .front{
+		position:static;
+	}
+	.flipper2 .back, .flipper .back{
+		position:static;
+		transform:rotateY(0deg);
+		height:auto;
+	}
+	.divSection section{
+		width:100%;
+	}
+	.mainVertical, .footerVertical{
+		margin:100px 0 0 0;
+		padding:0;
+	}
+	.divMain{
+		width:100%;
+	}
+	.footerVertical{
+		flex-wrap:wrap;
+		margin:0 auto;
+	}
+	.politicas{
+		width:90%;
+		text-align:center;
+	} 
+	.maps, .twitter, .facebook{
+	   width: 60%;
+		text-align: center;
+	}
+	/*FIN WEB HORIZONTAL Y VERTICAL*/
+	/*FORMULARIO*/
+	.foto, #fecha, #provincia, .principal{
+		width:100%;
+	}
+	#fecha, #provincia, .mainForm{
+		margin-left:0;
+	}
+	.principal{
+		padding:0;
+	}
+	.mainForm{
+		margin-top:100px;
+	}
+	label, input, option, select{
+		font-size:16px;
+	}
+	fieldset{
+		font-size:20px;
+	}
+	legend{
+		margin-left:10px;
+	}
+	.flex{
+		flex-wrap:wrap;
+	}
+} 
+
+	/*FIN FORMULARIO*/
+@media screen and (max-width:550px){
+	/*WEB HORIZONTAL Y VERTICAL*/
+	.divMain{
+		flex-wrap:wrap;
+		justify-content:space-around;
+	}
+	.girar{
+		width:100%;
+		padding:0;
+	}
+	.divSection section{
+		width:100%;
+	}
+	.flipper, .flipper2{
+		margin:15px auto;
+	}
+	/*FIN WEB HORIZONTAL Y VERTICAL*/
+
+	/*RESPONSIVE PÁGINA INDEX*/
+	.index{
+		flex-direction: column;
+	}
+}
+

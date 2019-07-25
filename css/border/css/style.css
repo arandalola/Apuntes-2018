@@ -1,0 +1,39 @@
+#multiple, #solid, #none, #hidden, #dotted, #double, #dashed, #groove, #ridge, #inset, #outset{
+	margin:30px;
+}
+#multiple{
+	border-color:red green black blue;/*En la propiedad se puede referenciar especificamente el color, el style y el width, colocando el valor en sentido de las manillas del reloj. También se puede referenciar especificamente que borde de la tabla quieres modificar, top, right, bottom o left.*/
+	border-width:20px;
+	border-style:solid dotted dashed double;
+}
+#solid{
+	border:5px solid #f00;/*Con el style solid el borde aparece con una línea.*/
+	border-radius:15px 0px 15px 0px;/*Con la propiedad border-radius redondeamos las esquinas de la caja, dando los valores en el sentido de las manillas del reloj, top(00px), right(00px), bottom(00px) y left(00px).*/
+}
+#none{
+	border:5px none #f00;/*Con el style none no hay borde.*/
+}
+#hidden{
+	border:5px hidden #f00;/*Con el style hidden el borde aparece transparente.*/
+}
+#dotted{
+	border:5px dotted #f00;/*Con el style dotted el borde aparece con una línea de puntos.*/
+}
+#double{
+	border:5px double #f00;/*Con el style double el borde aparece con doble línea.*/
+}
+#dashed{
+	border:5px dashed #f00;/*Con el style dashed el borde aparece con una línea discontinua.*/
+}
+#groove{
+	border:5px groove #f00;/*Comprobar en el navegador*/
+}
+#ridge{
+	border:5px ridge #f00;/*Comprobar en el navegador*/
+}
+#inset{
+	border:5px inset #f00;/*Con el style inset el borde del cuadrante superior aparece con una línea de color más oscura.*/
+}
+#outset{
+	border:5px outset #f00;/*Con el style inset el borde del cuadrante inferior aparece con una línea de color más oscura.*/
+}

@@ -1,0 +1,222 @@
+*{
+	margin:0;
+	padding:0;
+}
+.cir1{
+	width:25%;
+	float:left;
+}
+.cir2{
+	width:50%;
+	float:left;
+}
+.cir3{
+	width:25%;
+	float:left;
+}
+.circle1{
+	width:120px;
+	height:120px;
+	border:hidden;
+	border-radius:80px;
+	padding:20px;
+	margin:52px auto;
+	box-shadow:0 0 20px 10px #f44321;
+	background:linear-gradient(#f44321,#f9a542,#7ac043,#5090cd)
+}
+.circle{
+	width:240px;
+	height:240px;
+	border:hidden;
+	border-radius:140px;
+	padding:20px;
+	margin:0 auto;
+	box-shadow:0 0 20px 10px #f44321;
+	background:linear-gradient(#f44321,#f9a542,#7ac043,#5090cd)
+}
+.circle2{
+	width:120px;
+	height:120px;
+	border:hidden;
+	border-radius:80px;
+	padding:20px;
+	margin:52px auto;
+	box-shadow:0 0 20px 10px #f44321;
+	background:linear-gradient(#f44321,#f9a542,#7ac043,#5090cd)
+}
+.patterns{
+	padding-top:15px;
+	height:300px;
+	background-image:url("../imagenes/patterns.png");
+}
+.gradient{
+	background:linear-gradient(to left,#f44321,#f9a542,#7ac043,#5090cd)
+}
+nav li{
+		width:25%;
+		list-style:none;
+		outline:1px solid #f44321;
+		float:left;
+		padding:10px 0;
+		text-align:center;
+		background-color:#d5cf88;
+		text-shadow:0 0 10px #f44321;
+}
+.page a{
+	color:#f44321;
+	font-weight:900;
+	font-family: 'Londrina Shadow', cursive;
+}
+.hover1 a{
+	color:black;
+	font-weight:900;
+	font-family: 'Londrina Shadow', cursive;
+}
+.hover2 a{
+	color:black;
+	font-weight:900;
+	font-family: 'Londrina Shadow', cursive;
+}
+.hover3 a{
+	color:black;
+	font-weight:900;
+	font-family: 'Londrina Shadow', cursive;
+}
+.hover1 a:hover{
+	color:#f9a542; 
+}
+.hover2 a:hover{
+	color:#7ac043;
+}
+.hover3 a:hover{
+	color:#5090cd;
+}
+.exterior{
+	border-left:2px solid #f44321;
+	border-right:2px solid #f44321;
+	box-shadow:0 0 50px 10px #f44321;
+	padding:20px;
+	margin-top:30px;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:20px;
+}
+.interior{
+	border:1px solid #f44321;
+	border-radius:40px 40px 40px 40px;
+	margin:50px;
+	padding:20px;
+	box-shadow:10px 10px 10px #f44321;
+	background-color:#d5cf88;
+}
+.verde{
+	color:green;
+	font-family:'Lobster', cursive;
+}
+.azul{
+	color:blue;
+	font-family: 'Exo', sans-serif;
+	font-size:1.3em;
+}
+.verde1{
+	color:green;
+	font-family: 'Play', sans-serif;
+	font-variant:small-caps;
+	line-height:2;
+}
+.azul1{
+	color:blue;
+	font-family: 'Roboto', sans-serif;
+	font-weight:900;
+	letter-spacing:2px;
+}
+.d1{
+	height:125px;
+	width:1000px;
+	border:10px solid #f9a542;
+	border-radius:40px 0 40px 0;
+	margin:auto;
+	margin-top:60px;
+	margin-bottom:30px;
+	padding-top:40px;
+	text-align:center;
+	font-family:'Exo', sans-serif;
+	font-size:60px;
+	font-weight:900;
+	color:#f1f506;
+	background:black;
+}
+.d1:hover{
+	text-shadow:0 0 15px #f1f506, 0 0 15px #f1f506, 0 0 15px #f1f506, 0 0 15px #f1f506;
+}
+.d2{
+	height:125px;
+	width:1000px;
+	border:10px solid #7ac043;
+	border-radius:0 0 40px 0;
+	margin:auto;
+	margin-bottom:30px;
+	padding-top:40px;
+	text-align:center;
+	font-family:'Exo', sans-serif;
+	font-size:60px;
+	font-weight:900;
+	text-shadow:-5px 5px 0 green,-4px 4px 0 green,-3px 3px 0 green,-2px 2px 0 green,-1px 1px 0 green,-10px 3px 1px blue;
+	color:white;
+	background:black;
+}
+.d3{
+	height:125px;
+	width:1000px;
+	border:10px solid #f9a542;
+	border-radius:100px 100px;
+	margin:auto;
+	margin-bottom:30px;
+}
+.d4{
+	height:125px;
+	width:1000px;
+	border:10px solid #7ac043;
+	border-radius:40px 40px 0 0;
+	margin:auto;
+	margin-bottom:30px;
+}
+.d5{
+	height:125px;
+	width:1000px;
+	border:10px solid #f9a542;
+	border-radius:80px 0 80px 0;
+	margin:auto;
+	margin-bottom:30px;
+}
+.d6{
+	height:125px;
+	width:1000px;
+	border:10px solid #7ac043;
+	border-radius:40px 40px 40px 0;
+	margin:auto;
+	margin-bottom:30px;
+}
+.aspirina{
+	height:25px;
+	width:50px;
+	border:1px solid white;
+	border-radius:0 50px 50px 0;
+	background:linear-gradient(grey,white,grey);
+}
+.pildora{
+	height:25px;
+	width:50px;
+	border:1px solid white;
+	border-radius:50px 0 0 50px;
+	background:linear-gradient(grey,white,grey);
+	margin-bottom:30px;
+}
+.float{
+	float:left;
+}
+.centro{
+	height:100px;
+	width:112px;
+	margin:0 auto;	
+}

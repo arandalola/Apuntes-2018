@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background-color:black;
+}
+div{
+	width:100px;
+	height:100px;
+	background:grey;
+	margin:20px;
+	padding-top:20px;
+	text-align:center;
+	font-size:20px;
+	color:grey;
+}
+div:hover{
+	width:300px;
+	background:red;
+	font-size:40px;
+	color:black;
+	border-radius:200px;
+	box-shadow:5px 5px 20px black;
+	margin-left:500px;
+}
+.div1{
+	transition-timing-function:ease;
+	transition-duration:2s;
+	transition-property:width, background, font-size, color, border-radius, box-shadow, margin-left;
+	transition-delay:1s;
+}
+.div2{
+	transition-timing-function:linear;
+	transition-duration:2s;
+	transition-property:all;
+	transition-delay:1s;
+}
+.div3{
+	transition-timing-function:ease-in;
+	transition-duration:2s;
+	transition-property:width, background, font-size, color, border-radius, box-shadow, margin-left;
+	transition-delay:1s;
+}
+.div4{
+	transition-timing-function:ease-out;
+	transition-duration:2s;
+	transition-property:all;
+	transition-delay:1s;
+}
+.div5{
+	transition-timing-function:ease-in-out;
+	transition-duration:2s;
+	transition-property:width, background, font-size, color, border-radius, box-shadow, margin-left;
+	transition-delay:1s;
+}

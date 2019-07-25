@@ -1,0 +1,11 @@
+/*El selector # seguido del nombre del id, hace referencia a un id en un documento html*/
+#miid{
+	text-transform:uppercase;
+}
+#emheader{
+	text-transform:uppercase;
+}
+/*El selector . sguido del nombre de la clase, hace referencia a una clase en un documento html, funciona como un id, pero el nombre de la clase se puede repetir tantas veces se necesite*/
+.parrafospares{
+	color:blue;
+}

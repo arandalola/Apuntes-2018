@@ -1,0 +1,26 @@
+.e1{
+	color:#0000ff;
+}
+.e2{
+	color:#00ff00;
+}
+.e3{
+	color:#ffff00;
+}
+.e4{
+	color:#ff3300;
+}
+.e5{
+	color:#ff00ff;
+}
+.e6{
+	color:#00ff00;
+}
+.font{
+	font:italic small-caps lighter 30px/1.5 Ewert;
+	background-color:yellow;
+}
+.font1{
+	font:italic small-caps lighter 30px/1.5 Ewert;
+	background-color:blue;
+}

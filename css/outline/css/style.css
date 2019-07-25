@@ -1,0 +1,21 @@
+.perfil{
+	width:600px;
+	height:600px;
+	margin-bottom:30px;
+	outline:1px solid #000;
+	padding:20px;
+}
+.borde{
+	width:600px;
+	height:600px;
+	margin-bottom:30px;
+	border:1px solid #000;
+}
+.texto{
+	outline:1px solid blue;
+	width:60px;
+}
+
+
+
+	

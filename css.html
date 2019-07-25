@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="imagenes/logos/favicon.jpg"/>
+		<link rel="stylesheet" href="style/minireset.css"/>
+		<link rel="stylesheet" href="style/base.css"/>
+		<link rel="stylesheet" href="style/style.css"/>
+		<link rel="stylesheet" href="style/responsive.css"/>
+		<title>CSS</title>
+	</head>
+	<body class="bcss">
+		<header class="hcss">
+			<div class="div1">
+				<div class="logo">
+					<a href="index.html"><img src="imagenes/logos/css.png" alt="Logo" title="Logo" width="150"/></a>
+				</div>
+				<div class="cap">
+					<h1>CSS3</h1>
+				</div>
+			</div>
+		</header>
+		<nav class="navHorizontal hHorizontal sticky top0 zindex ancho100">
+			<ul class="flex centrarHLinea negrita menu">
+				<li class="ancho100 licss"><a href="#regla">Regla CSS y vinculación</a></li>
+				<li class="ancho100 licss"><a href="#basicas">Propiedades CSS básicas</a></li>
+				<li class="relative ancho100 mostrarLista licss"><a href="#css">Propiedades CSS</a>
+					<ul class="ocultar absolute ancho100">
+						<li class="licss"><a href="#css">Id</a></li>
+						<li class="licss"><a href="#class">Class</a></li>
+						<li class="licss"><a href="#descendientes">Descendientes</a></li>
+						<li class="licss"><a href="#directos">Descendientes directos</a></li>
+						<li class="licss"><a href="#hermano">Primer hermano</a></li>
+						<li class="licss"><a href="#hermanos">Todos los hermanos</a></li>
+						<li class="licss"><a href="#margin">Margin y Padding</a></li>
+						<li class="licss"><a href="#border">Border</a></li>
+						<li class="licss"><a href="#bola">Div-bola</a></li>
+						<li class="licss"><a href="#box">Box-shadow</a></li>
+						<li class="licss"><a href="#backg">Background</a></li>
+						<li class="licss"><a href="#hover">Hover</a></li>
+						<li class="licss"><a href="#visual">Visualización</a></li>
+						<li class="licss"><a href="#posicion">Posicionamiento</a></li>
+						<li class="licss"><a href="#menus">Menús desplegables</a></li>
+						<li class="licss"><a href="#transiciones">Transiciones</a></li>
+						<li class="licss"><a href="#animaciones">Animaciones</a></li>
+						<li class="licss"><a href="#transform">Transform</a></li>
+						<li class="licss"><a href="#responsive">Responsive</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main class="mcss">
+			<div id="regla" class="ancla"></div>
+			<h2>Regla CSS y vinculación</h2>
+			<div>
+				<p>CSS significa <span class="strong">Cascading Style Sheets.</span> CSS es un lenguaje que describe el estilo de un documento HTML. CSS se utiliza para definir estilos para sus páginas web, incluyendo el diseño, la disposición y las variaciones en la pantalla para diferentes dispositivos y tamaños de pantalla. </p>
+				<p>El bloque de declaración contiene uno o más declaraciones separados por punto y coma. Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos. Una declaración CSS siempre termina con un punto y coma, y ​​los bloques de declaraciones están rodeados por llaves.</p>
+				<p>La regla css que debes seguir para introducir una declaración es: selector, propiedad y valor. Los selectores CSS se utilizan para "encontrar" (o seleccionar) elementos HTML en función de su nombre del elemento, ID, clase, atributo, y mucho más.</p>
+			</div>
+			<div class="pre">
+				<pre>
+	selector{
+		propiedad:valor;
+	}
+				</pre>
+			</div>
+			<div>
+				<p>Para ello tienes básicamente 3 opciones para aplicar la regla:</p>
+				<ol>
+					<li class="lista">Hojas de estilo CSS inline</li>
+					<li class="lista">Hojas de estilo CSS internos</li>
+					<li class="lista">Hojas de estilo CSS externos</li>
+				</ol>
+			</div>
+			<div>
+				<p>La base de estos apuntes es la opción de hojas de estilo CSS externos. La etiqueta que se utiliza para enlazar un archivo html y uno .css es, <span class="strong">&lt;link rel="stylesheet" href="ruta hasta el archivo .css"&gt;</span>, dentro de head.</p>
+			</div>
+			<h3>Hojas de estilo CSS inline:</h3>
+			<div>
+				<pre>
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;<span class="strong">CSS Estilo Inline</span>&lt;/title&gt;
+	&lt;link rel="shortcut icon" href="imagenes/favicon.jpg"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	<span class="strong">&lt;p style="color:blue;"&gt;</span> ut perspiciatis unde omnis
+	iste natus error sit voluptatem accusantium doloremque 
+	laudantium, totam rem aperiam, eaque 
+	ipsa quae ab illo inventore veritatis et quasi 
+	architecto beatae vitae dicta sunt explicabo.
+	&lt;/p&gt;
+	<span class="strong">&lt;p style="background:purple;color:white;"&gt;</span>
+	Neque porro	quisquam est, qui dolorem ipsum
+	quia dolor sit amet, consectetur, adipisci
+	velit, sed quia non numquam eius modi tempora
+	incidunt ut labore et dolore magnam aliquam
+	quaerat voluptatem.&lt;/p&gt;
+&lt;/body&gt;
+				</pre>
+			</div>
+			<div>
+				<p>Poco recomendable utilizar estilo inline para aplicar css, se utiliza style como atributo en las etiquetas, y entre comillas asignamos propiedad, dos puntos y valor, separados cada propiedad con su valor por punto y coma.</p>
+			</div>
+			<h3>Hojas de estilo CSS internos:</h3>
+			<div>
+				<pre>
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;<span class="strong">CSS Estilo en el Head</span>&lt;/title&gt;
+	&lt;link rel="shortcut icon" href="imagenes/favicon.jpg"/&gt;
+	&lt;style&gt;
+		body{  <span class="spcss">Selector</span>
+			background-color:grey;  <span class="spcss">Propiedad y valor</span>
+		}
+		p{     <span class="spcss">Selector</span>
+			color:orange;    	<span class="spcss">Propiedad y valor</span>
+			font-size:25px;  	<span class="spcss">Propiedad y valor</span>
+		}
+	&lt;/style&gt;
+&lt;/head&gt;
+				</pre>
+			</div>
+			<div>
+				<p>Todo lo que incluye la etiqueta &lt;style&gt; sirve para aplicar css. Se utiliza la regla css:selector{ propiedad:valor;}, dentro de la etiqueta head.</p>
+				<p>Primero, selector seguido de corchete. Cambias de línea y tabulas para definir la propiedad, dos puntos, y asignar el valor, punto y coma. Cada propiedad debe estar en una línea. Cerrar corchete a la misma altura que el selector.</p>
+			</div>
+			<h3>Hojas de estilo CSS externos:</h3>
+			<div>
+				<p>Se pueden usar varios archivos .css para un mismo documento, ls última orden es la prioritaria.</p>
+			</div>
+			<h4>Archivo .html:</h4>
+			<div>
+				<pre>
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;<span class="strong">CSS Estilo Externo</span>&lt;/title&gt;
+	&lt;link rel="shortcut icon" href="imagenes/favicon.jpg"/&gt;
+	<span class="strong">&lt;link rel="stylesheet" href="css/minireset.css"/&gt;</span>	<span class="spcss">Resetea el CSS de el navegador.</span> 
+	<span class="strong">&lt;link rel="stylesheet" href="css/base.css"/&gt;</span>		<span class="spcss">Plantilla base.</span>
+	<span class="strong">&lt;link rel="stylesheet" href="css/style.css"/&gt;</span>		<span class="spcss">Cambios puntuales.</span>
+&lt;/head&gt;
+				</pre>
+			</div>
+			<div class="iframe">
+				<div>
+					<h4>Archivo minireset.css:</h4>
+					<iframe src="style/minireset.css"></iframe>
+				</div>
+				<div>
+					<h4>Archivo base.css:</h4>
+					<iframe src="style/base.css"></iframe>
+				</div>
+				<div>
+					<h4>Archivo style.css:</h4>
+					<iframe src="style/style.css"></iframe>
+				</div>
+			</div>
+			<hr/>
+			<div id="basicas" class="ancla"></div>
+			<h2>Propiedades básicas CSS</h2>
+			<div>
+				<p>Los comentarios se utilizan para explicar el código, y puede ayudar al editar el código fuente en una fecha posterior. Los comentarios son ignorados por los navegadores.</p> 
+				<p>Un comentario comienza con / * y termina con * /.</p>
+			</div>
+			<div>
+				<p>Se pueden introducir <span class="negrita">varias etiquetas en un selector</span>, separadas por comas. Siempre que tengan propiedades en común las podemos agrupar de esta manera. Será mejor para agrupar los selectores, para minimizar el código.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>p,h1,h5,{
+	color:orange;    <span class="spcss">Los selectores indicados seran todos del mismo color.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">El selector *</span> selecciona todos los elementos del archivo html para darles propiedad y valor.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>*{
+	background-color:grey; <span class="spcss"> Esta propiedad da valor al fondo del sitio web,
+				como utilizas el * como selector,
+				referencia todos los elementos del documento.</span>
+}
+				</pre>
+			</div>
+			<h3>Color</h3>
+			<div>
+				<p>Los colores se especifican utilizando nombres de color predefinidos, o los valores <span class="negrita">RGB, HEX, HSL</span> (tonalidad, saturación, luminosidad), RGBA (rojo, verde, azul, alfa) alfa especifica la opacidad de un color. HSLA (tonalidad, saturación, luminosidad, alfa).</p>
+				<p>Con CSS, un color generalmente se especifica mediante:</p>
+					<ul>
+						<li class="lista">Un nombre de color válido - como "rojo"</li>
+						<li class="lista">Un valor HEX - como "# FF0000"</li>
+						<li class="lista">Un valor RGB (rojo, verde, y azul) - como "rgb (255,0,0)"</li>
+					</ul>
+				<p>HTML es compatible con <a class="ejemplo" href="            https://www.w3schools.com/colors/colors_picker.asp"> 140 nombres de colores estándar</a>.</p>
+			</div>
+			<div>
+				<p><span class="negrita">La propiedad color</span> se utiliza para establecer el color del texto.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div class="pre">
+				<pre>h1{
+	color: green;
+}
+				</pre>
+			</div>
+			<a id="color" href="css/color/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<h3>Tipografía y fuentes</h3>
+			<div>
+				<p><span class="negrita">La font-family</span> de un texto se establece con la propiedad font-family.</p>
+				<p>La propiedad font-family debe contener varios nombres de fuentes como un sistema de "retroceso" en la declaración. Si el navegador no es compatible con la primera fuente, se intenta con el siguiente tipo de letra, y así sucesivamente. Si el nombre de una familia de fuentes es más de una palabra, debe ser entre comillas, como: "Times New Roman".</p>
+				<p>La forma de asignar una o varias familias tipográficas a un archivo .html, introduciendo una etiqueta link en el head, es la opción standard de Google Fonts..</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<p>&lt;link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet"&gt;</p>
+				<p>&lt;link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet"&gt;</p>
+			</div>
+			<div>
+				<pre>.e2{
+	font-family: 'Butterfly Kids', cursive;
+}
+.e3{
+	font-family: 'Hanalei Fill', cursive;
+}  
+				</pre>
+			</div>
+			<div>
+				<p>El recurso Google Fonts con la opción @import, nos facilita asignar una o varias familias tipográficas en un archivo .css. Se asigna esta opción en el archivo .css al principio del documento sin ningún selector ni comentario, se recomienda probar las tildes y la ñ en la fuente seleccionada para comprobar que funciona correctamente para el idioma español. Con la opción Customize se pueden seleccionar todos los tipos de estilo que contenga la fuente.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<p>@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');</p>
+				<p>@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i');</p>
+			</div>
+			<div>
+				<pre>h1{
+	font-family: 'Baloo Bhaina', cursive;
+	font-size:60px;
+}
+pre{
+	font-family: 'Ubuntu Mono', monospace;
+	font-size:20px;
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">La propiedad font-style</span> se utiliza para especificar el estilo a la fuente del texto .</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>p.normal {
+	font-style: normal;  <span class="spcss">Asigna un valor normal a la fuente del texto.</span>
+}
+p.italic {
+	font-style: italic;  <span class="spcss">Asigna un valor cursiva a la fuente del texto.</span>
+}
+p.oblique {
+	font-style: oblique;  <span class="spcss">Asigna un valor oblicuo a la fuente del texto.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">La propiedad font-size</span> establece el tamaño del texto. Se pueden utilizar otros valores de medida como em, en % y valores entre xx-large y xx-small.</p> 
+				<p>El tamaño de la unidad em es recomendado por el W3C. 1 em es igual al tamaño de fuente actual. El tamaño de texto por defecto en los navegadores es 16px. Por lo tanto, el tamaño predeterminado de 1 em es 16px.</p>
+				<p>El procentaje % fija un tamaño de fuente en porcentaje para el elemento.</p>
+				<p>Se puede establecer el tamaño del texto mediante los valores, xx-large, x-large, large, medium, x-small y xx-small.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div class="pre">
+				<pre>h1 {
+	font-size: 40px;  
+}
+h2 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 15%;
+}
+h2 {
+	font-size: x-small;
+}
+				</pre>
+			</div>
+			<div>
+				<p>Otras propiedades de fuente son <span class="negrita">font-variant</span>, que con el valor small-caps convierte el texto seleccionado en mayúsculas; la propiedad font-weight, establece cómo se deben mostrar caracteres gruesas o delgadas en el texto, los valores que podemos utilizar son un rango del 100 al 900, de 100 en 100, o bold, bolder, lighter, initial, inherit. Por defecto el valor será normal.</p>
+				<p><span class="negrita">La propiedad font</span>, engloba varios valores y así se reduce el código.
+				A continuación se muestra un ejemplo de cómo mostrar la declaración mediante "short hand", el orden que deben seguir y los valores que son obligatorios, que son font-family y font-size, los demás son todos opcionales.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.font{
+	font:font-style font-variant font-weight font-size/line-height font-family;
+}
+				.font{
+	font:italic small-caps bold 30px/1.5 Ewert;
+}
+				</pre>
+			</div>
+			<h3>Texto</h3>
+			<div>
+				<p><span class="negrita">La propiedad text-align</span> se utiliza para establecer la alineación horizontal de un texto, siempre que el elemento sea de línea, también se utiliza cuando una imagen está dentro de un contenedor. Cuando el elemento a centar sea de blque se utiliza margin:0 auto; Un texto puede ser alineado a la izquierda o la derecha, centrado o justificado.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>h1{
+	text-align: center;  <span class="spcss">Texto alineado en el centro.</span>
+}
+h2{
+	text-align: left;  <span class="spcss">Texto alineado a la izquierda.</span>
+}
+h5{
+	text-align: right;  <span class="spcss">Texto alineado a la deracha.</span>
+}
+h4{
+	text-align: justify;  <span class="spcss">Texto justificado. No se utiliza.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">La propiedad text-decoration</span> se utiliza para establecer o eliminar decoraciones de texto.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>a{
+	text-decoration: none;  	<span class="spcss">Este valor se utiliza a menudo para eliminar los subrayados de enlaces.</span>
+}
+h1 {
+	text-decoration: overline;  	<span class="spcss">Valor que dibuja una línea encima del texto.</span>
+}
+h2 {
+	text-decoration: line-through;  <span class="spcss">Valor que tacha el texto.</span>
+}
+h5 {
+	text-decoration: underline;  	<span class="spcss">Valor que dibuja una línea bajo el texto.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">La propiedad text-transform</span> se utiliza para especificar letras mayúsculas y minúsculas en un texto.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>p.uppercase {
+	text-transform: uppercase;  <span class="spcss">Transforma el texto en mayúsculas.</span>
+}
+p.lowercase {
+	text-transform: lowercase;  <span class="spcss">Transforma el texto en minúsculas.</span>
+}
+p.capitalize {
+	text-transform: capitalize;  <span class="spcss">Transforma las primera letras de una palabra en mayúscula.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">La propiedad text-shadow</span> le da sombra al texto.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>h1 {
+	text-shadow: 3px 2px red; <span class="spcss">Asigna un valor que le da sombra al texto. 1º valor desplaza hacia la derecha,
+				  2º valor desplaza hacia abajo y 3º valor le asigna color al difuminado.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">La propiedad text-indent</span> le da tabulado al texto. El valor se puede asignar en px, em o %.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>h1 {
+	text-indent:5px; <span class="spcss">Asigna tabulado al texto.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p>Otras propiedades de texto son <span class="negrita">letter-spacing</span>, que da espacio específico entre letras, su valor se asigna normalmente con píxels; <span class="negrita">line-height</span>, el interlineado de los párrafos, su valor  se asigna con varios tipos de medida, como em, % o píxels.</p>
+			</div>
+			<a id="fuentes" href="css/tipografiaFuentes/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<h3>Altura y anchura</h3>
+			<div>
+				<p><span class="negrita">Las propiedades height y width</span> se utilizan para ajustar la altura y la anchura de un elemento. El height y width se pueden configurar para especificar en valores de longitud , como px, cm, etc., o en porcentaje (%).</p>
+				<p>Las propiedades height y width no incluyen el padding, margin o bordes.</p>
+				<p>Al configurar las propiedades de anchura y altura de un elemento con CSS, teniendo en cuenta el ancho y la altura del área de contenido, se debe calcular el tamaño de un elemento, también debe agregar márgenes interiores, bordes y márgenes exteriores.</p>
+				<p>Suponemos que queremos un elemento &lt;div&gt; que tenga una anchura total de 350 píxeles:</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>	
+				<pre>div {
+	width: 320px;		<span class="spcss">Propiedad que da valor al ancho del elemento en px.</span>
+	height: 160px;		<span class="spcss">Propiedad que da valor a la altura del elemento en px.</span>
+	padding: 10px;  	<span class="spcss">Propiedad que referencia los valores interiores del margen.</span>
+	border: 5px solid grey; <span class="spcss">1º valor el grosor, 2º valor el estilo y 3º valor el color.</span>
+	margin: 0;  		<span class="spcss">Propiedad que referencia los valores exteriores del margen.</span>
+}
+				</pre>
+			</div>
+			<div class="caja">350px x 190px</div>
+			<div>
+				<p>Aquí está el cálculo:</p>
+				<ul>
+					<li class="lista">320px (anchura)</li>
+					<li class="lista">+ 20 píxeles (izquierda + derecha relleno)</li>
+					<li class="lista">+ 10px (izquierda + derecha frontera)</li> 
+					<li class="lista">+ 0px (margen izquierdo + derecho)</li> 
+					<li class="lista">= 350 píxeles</li>
+				</ul>
+			</div>
+			<div>
+				<p>La anchura total de un elemento debe calcularse así:</p>
+				<p>Ancho total elemento = ancho + acolchado izquierda + relleno derecho + borde izquierdo + borde derecho + margen izquierdo + margen derecho.</p>
+				<p>La altura total de un elemento debe calcularse así:</p>
+				<p>Altura total elemento = altura + top acolchado + acolchado inferior + borde superior + borde inferior + margen superior + margen inferior.</p>
+			</div>
+			<hr/>
+			<div id="css" class="ancla"></div>
+			<h2>Propiedades CSS</h2>
+			<h3>ID</h3>
+			<div>
+				<p><span class="negrita">El selector de ID</span> utiliza el atributo id de un elemento HTML para seleccionar un elemento específico. La identificación de un elemento debe ser único dentro de una página, por lo que el selector de ID se utiliza para seleccionar un elemento único! Para seleccionar un elemento con un ID específico, escribe un carácter almohadilla (#), seguido por el id del elemento.</p>
+				<p>Nota: Un nombre de ID no puede comenzar con un número!</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre id="class">#miid{
+	text-transform:uppercase;  <span class="spcss">Propiedad que transforma a mayúsculas el texto.</span>
+}
+				</pre>
+			</div>
+			<hr/>
+			<h3>Class</h3>
+			<div>
+				<p><span class="negrita">El selector de clase</span> selecciona elementos con un atributo de clase específica. Para seleccionar elementos con una clase específica, escriba un punto (.) seguido del nombre de la clase. Funciona como un id, pero el nombre de la clase se puede repetir tantas veces se necesite.</p>
+				<p>Nota: Un nombre de clase no puede comenzar con un número!</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre id="descendientes">.parrafospares{
+	color:blue;  <span class="spcss">Propiedad que da color al texto.</span>
+}
+				</pre>
+			</div>
+			<hr/>
+			<h3>Descendientes</h3>
+			<div>
+				<p>Para dar estilo a etiquetas que se repiten en el documento html y diferenciarlas unas de otras, utilizamos la descendencia, se indica la etiqueta que queremos diferenciar, separando cada nivel de descendencia por un espacio. Indicando la etiqueta de la que desciende y la etiqueta descendiente.</p>
+				<p>Si tenemos una propiedad y valor común para diferentes selectores, podemos agrupar del siguiente modo: header span, main span{propiedad y valor en común} o header span, main em, footer strong{propiedad y valor en común}.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>header p{
+	color:orange;  <span class="spcss">Propiedad que da color al texto.</span>
+}
+main p{
+	color:blue;    <span class="spcss">Propiedad que da color al texto.</span>
+}
+footer p{
+	color:green;   <span class="spcss">Propiedad que da color al texto.</span>
+}
+<span id="directos"></span>
+				</pre>
+				
+			</div>
+			<hr/>
+			<h3>Descendientes directos</h3>
+			<div>
+				<p>Para referenciar etiquetas que son descendientes directos, utilizamos en el selector: la etiqueta padre seguida del símbolo >, seguido de un espacio y la etiqueta descendiente directa.</p>
+			</div>	
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>header> p{
+	color:#0f0;  <span class="spcss">Propiedad que da color al texto con el método hexadecimal en el valor.</span>
+}
+main div> p{
+	color:red;   <span class="spcss">Propiedad que da color al texto.</span>
+}
+<span id="hermano"></span>
+				</pre>
+				
+			</div>
+			<hr/>
+			<h3>Primer hermano</h3>
+			<div>
+				<p>El primer hermano hace referencia al hermano directo de la etiqueta en el documento html. En primer lugar en el selector el hermano mayor, seguido del símbolo +, y de la etiqueta que es primer hermano, seguido después de un espacio por la clase o id al que queremos referenciar, si los hubieran.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre id="hermanos">h2+p .inicial, p+p .inicial{ 
+	font-size:48px;  <span class="spcss">Propiedad que da tamaño al texto en px.</span>
+	color:#FFF;      <span class="spcss">Propiedad que da color al texto con el método hexadecimal en el valor.</span>
+}
+				</pre>
+			</div>
+			<hr/>
+			<h3>Todos los hermanos</h3>
+			<div>
+				<p>Todos los hermanos referencia a todos los hermanos de una etiqueta en el documento html. En primer lugar en el selector el hermano mayor, seguido del símbolo ~, y de la etiquetas que son hermanos, seguido después de un espacio por la clase o id al que queremos referenciar, si los hubieran. </p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre  id="margin">h2~p .inicial, p~p .inicial{ 
+	font-size:48px;  <span class="spcss">Propiedad que da tamaño al texto en px.</span>
+	color:#FFF;      <span class="spcss">Propiedad que da color al texto con el método hexadecimal en el valor.</span>
+}
+				</pre>
+			</div>
+			<hr/>
+			<h3>Margin y Padding</h3>
+			<div>
+				<p>El margin hace referencia al margen exterior de la caja y el padding referencia al margen interior de la caja. Denominamos los lados de la caja con top(arriba), right(izquierda), bottom(abajo)y left(derecha) y  las colocamos en el valor en sentido de las manillas del reloj. Si ponemos un solo valor (00px) referencia a todos con el mismo valor, si ponemos dos valores el primero referencia a top y bottom, y el segundo a right y a left, si ponemos tres valores el primero referencia a top, el segundo a right y left y el tercero referencia al bottom.</p>
+				<p>Si elegimos una imagen con fondo transparente se visualiza mejor el efecto del margin y padding. Los valores negativos son permitidos sólo en el margin. </p>
+				<p>Para mantener la anchura de la caja cuando utilizamos padding,ya que el padding añadido a dicho elemento será añadido a la anchura total de la caja, puede utilizar la propiedad box-sizing:border-box;. Esto hace que el elemento mantenga su anchura; si aumenta el relleno, el espacio contenido disponible disminuirá.</p>
+			</div>
+			<h4>Esquema margin y padding</h4>
+			<div class="margin">
+				<img src="imagenes/margin.jpg" alt="Esquema margin y padding" title="Esquema margin y padding"/>
+			</div>
+			<div>
+				<p>Explicación de las diferentes partes:</p>
+				<ul>
+					<li class="lista">Contenido. El contenido de la caja, donde aparecen textos e imágenes.</li>
+					<li class="lista">Padding. Borra un área alrededor del contenido. El padding es transparente.</li>
+					<li class="lista">Border. Un borde que va alrededor del padding y contenido.</li>
+					<li class="lista">Margin. Borra un área fuera del borde. El margin es transparente.</li>
+				</ul>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>p{
+	margin:30px 10px 40px 15px;  <span class="spcss">Propiedad que referencia los valores exteriores del margen, top-right-bottom-left</span>
+	padding:20px 20px 50px 20px; <span class="spcss">Propiedad que referencia los valores interiores del margen, top-right-bottom-left</span>
+}
+				</pre>
+				<pre>main img{
+	margin:10px;  		<span class="spcss">Si damos un valor, referencia a todos los margenes exteriores.</span>
+	margin:10px 10px;  	<span class="spcss">Si damos dos valores, el primer valor referencia al margen top y bottom exteriores, 
+				y el segundo valor a right y left exteriores.</span>
+	margin:10px 10px 10px;  <span class="spcss">Si damos tres valorer, el primer valor referencia al margen top exterior, 
+				el segundo a right y left exteriores, y el tercero a bottom exterior.</span>
+	padding:20px;  		<span class="spcss">Si damos un valor, referencia a todos los margenes interiores.</span>
+	padding:10px 10px;  	<span class="spcss">Si damos dos valores, el primer valor referencia al margen top y bottom interiores, 
+				y el segundo valor a right y left interiores.</span>
+	padding:10px 10px 10px; <span class="spcss">Si damos tres valorer, el primer valor referencia al margen top interior, 
+				el segundo a right y left interiores, y el tercero a bottom interior.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p>Con la propiedad y valor, margin:auto; se centran horizontalmente los elementos en su caja.</p>
+				<pre id="border">main div{
+	width:300px;   <span class="spcss">Propiedad que da valor al ancho de la caja en px.</span>
+	padding:40px;  <span class="spcss">Propiedad que da valor a todos los margenes interiores en px.</span> 
+	margin:auto;   <span class="spcss">Propiedad que centra los elementos de bloque.</span>
+}
+				</pre>
+			</div>
+			<hr/>
+			<h3>Border</h3>
+			<div>
+				<p>Los CSS border, propiedades que permiten especificar el estilo, el ancho y el color del borde de un elemento. En la propiedad se puede referenciar especificamente el width, el style y el color, colocando el valor en sentido de las manillas del reloj. También se puede referenciar especificamente que borde de la tabla quieres modificar, top, right, bottom o left.</p>
+				<p>El valor de style, se debe indicar porque en su defecto selecciona none, y entonces no aparece ningún borde. Si indicamos solo el style, el width por defecto vale 1px y el color por defecto es el negro.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>#multiple{
+	border-color:red green black blue; <span class="spcss">Valor de color top-right-bottom-left</span>
+	border-style:solid dotted dashed;  <span class="spcss">Valor de estilo top-(right-left)-bottom</span>
+	border-style:solid dotted;         <span class="spcss">Valor de estilo (top-bottom)-(right-left)</span>
+	border-width:20px;                 <span class="spcss">Valor de ancho que referencia a todos los lados.</span>
+}
+				</pre>
+				<pre>#multiple{
+	border-top:5px solid #f00;  <span class="spcss">Referencia el borde de arriba,1º valor el grosor, 2º valor el estilo y 3º valor el color.</span>
+	border-bottom:5px solid;    <span class="spcss">Referencia el borde de abajo, 1º valor el grosor y 2º valor el estilo del borde, 
+				    el color por defecto es el negro.</span>
+	border-left:solid #f00;     <span class="spcss">Referencia el borde izquierdo, 1º valor el estilo y 2º valor el color del borde, 
+				    el grosor por defecto es de 1 px.</span>
+	border-right:solid;         <span class="spcss">Referencia el borde derecho, valor de estilo de borde, por defecto el grosor es 1px
+				    y el color es negro.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p>A continuación vemos varios tipos de style:</p>
+			</div>
+			<div>
+				<pre>#solid{  
+	border:5px solid #f00;  	  <span class="spcss">Con el style solid el borde aparece con una línea.</span>
+	border-radius:15px 0px 15px 0px;  <span class="spcss">La propiedad border-radius redondeamos las esquinas de la caja,
+	                                  dando los valores en el sentido de las manillas del reloj, top(00px),
+					  right(00px), bottom(00px) y left(00px).</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#none{
+	border:5px none #f00;    <span class="spcss">Con el style none no hay borde.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#hidden{
+	border:5px hidden #f00;  <span class="spcss">Con el style hidden el borde aparece transparente.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#dotted{
+	border:5px dotted #f00;  <span class="spcss">Con el style dotted el borde aparece con una línea de puntos.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#double{
+	border:5px double #f00;  <span class="spcss">Con el style double el borde aparece con doble línea.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#dashed{
+	border:5px dashed #f00;  <span class="spcss">Con el style dashed el borde aparece con una línea discontinua.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#groove{
+	border:5px groove #f00;  <span class="spcss">Define un borde acanalado 3D. </span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#ridge{
+	border:5px ridge #f00;  <span class="spcss">Define un borde estriado 3D.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#inset{
+	border:5px inset #f00;  <span class="spcss">El style inset, el borde del cuadrante superior aparece con una línea 
+				de color más oscura.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#outset{
+	border:5px outset #f00;  <span class="spcss">El style outset, el borde del cuadrante inferior aparece con una línea 
+				 de color más oscura.</span>
+}
+				</pre>
+			</div>
+			<a id="border" href="css/border/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<hr/>
+			<h3>Outline</h3>
+			<div>
+				<p>La propiedad outline, hace que el perfil no sume la unidad de medida utilizada, en este caso pixels, al elemento.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.perfil{
+	outline:1px solid #000;  <span class="spcss">1º Referencia el grosor de los bordes, 2º valor el estilo y 3º valor el color.</span>
+	outline:none; 		</span class="spcss"> Hace que no aparezca el borde.</span>
+}				</pre>
+			</div>
+			<div  id="bola">
+				<p>También podemos aplicar outline a un texto para definirlo o destacarlo dentro del cuerpo y para que no se visualice el borde.</p>
+			</div>
+			<hr/>
+			<h3>Div-bola</h3>
+			<div>
+				<p>La propiedad border radius hace que la caja se muestre como un círculo.</p>
+				<p>La propiedad text-align sirve para centrar el texto dentro de su caja</p>
+				<p>Con la propiedad y valor, margin:auto; se centran los elementos de bloque.</p>
+				<p>La propiedad width y height deben ser las mismas cuando hacemos un círculo,y el border -radius siempre tiene que ser la mitad del valor que le hemos dado a las propiedades de width y height</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.bola{
+	width:1000px;  		<span class="spcss">Propiedad que referencia el ancho de la caja en px.</span>
+	height:1000px;  	<span class="spcss">Propiedad que referencia el alto de la caja en px.</span>
+	border:10px solid blue; <span class="spcss">Referencia los bordes de la caja,1º valor el grosor, 2º valor el estilo y 3º valor el color.</span>
+	background:green;  	<span class="spcss">Propiedad que da color al fondo.</span>
+	text-align:center;	<span class="spcss">Propiedad que centra el texto.</span>
+	margin:50px auto;  	<span class="spcss">Propiedad que referencia los margenes de la caja, 1º valor arriba y abajo, y 2º valor
+				izquierda y deracha.</span>
+	border-radius:500px;  	<span class="spcss">Propiedad que con un solo valor representa un círculo.</span>
+}
+				</pre>
+			</div>
+			<a id="box" href="css/divbola/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<hr/>
+			<h3>Box-shadow</h3>
+			<div>
+				<p>Sombreado para cajas, es una caja superpuesta que con los dos primeros valores la desplazamos, con el tercer valor le damos densidad al difuminado y el cuarto valor le da color al difuminado.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>#difright{
+	width:400px;   			 <span class="spcss">Propiedad que referencia el ancho de la caja en px.</span>
+	height:250px;  			 <span class="spcss">Propiedad que referencia el alto de la caja en px.</span>
+	border:solid;  		  	 <span class="spcss">Estilo del borde de la caja.</span>
+	margin:100px auto 100px;  	 <span class="spcss">Bordes exteriores de la caja.</span>
+	box-shadow:20px 20px 30px #000;  <span class="spcss">Sombreado right inferior de la caja.</span>				
+	<span class="spcss">1ºpx desplaza a la derecha - 2ºpx desplaza abajo - 3ºpx densidad difuminado - 4ºpx color del difuminado</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#difleft{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:-20px 20px 30px #000;  <span class="spcss">Sombreado left inferior de la caja.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#diftopr{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:20px -20px 30px #000;  <span class="spcss">Sombreado top right de la caja.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#diftopl{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:-20px -20px 30px #000;  <span class="spcss">Sombreado top left de la caja.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#difred{
+	width:400px;
+	height:250px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:20px 20px 30px #000;
+	border-radius:15px 15px 15px 15px;  <span class="spcss">Redondea las equinas de la caja.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<pre>#difcir{
+	width:500px;
+	height:500px;
+	border:solid;
+	margin:100px auto 100px;
+	box-shadow:0px 0px 30px #000;  <span class="spcss">Difumina toda la caja.</span>
+	border-radius:250px;  	       <span class="spcss">Utiliza sólo un valor para que realice un círculo. </span>
+}
+				</pre>
+			</div>
+			<a id="backg" href="css/boxShadow/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<hr/>
+			<h3>Background</h3>
+			<div>
+				<p>Las propiedades de fondo CSS, background, se utilizan para definir los efectos de fondo de los elementos.</p>
+				<p>A continuación vemos varios tipos de background:</p>
+			</div>
+			<div>
+				<p><span class="negrita">Backgroung linear-gradient</span>, crea una transición suave y lineal de al menos dos colores. También puede establecer un punto de partida y una dirección (o un ángulo).</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.vertical{
+	width:200px;
+	height:200px;
+	border:solid;
+	margin-bottom:30px;
+	background:linear-gradient(blue,purple,green,yellow,red);	      <span class="spcss">Gradient lineal - de arriba a abajo 
+	(este valor es por defecto).</span>
+}
+.horizontal{
+	width:200px;
+	height:200px;
+	border:solid;
+	margin-bottom:30px;
+	background:linear-gradient(to right,blue,purple,green,yellow,red);    <span class="spcss">Gradient Lineal - De izquierda a derecha.</span>
+}
+.diagonal{
+	width:200px;
+	height:200px;
+	border:solid;
+	background:linear-gradient(to top left,blue,purple,green,yellow,red); <span class="spcss">Gradient lineal que comienza en la parte 
+									      superior izquierda y va a la parte 
+									      inferior derecha.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Background-color</span>, propiedad que especifica el color de fondo de un elemento. Con el valor RGBA (rojo, verde, azul, alfa) alfa especifica la opacidad de un color.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.exterior{
+	width:500px;
+	height:500px;
+	border:solid;
+	background-color:rgb(0,0,255);  <span class="spcss">Valor definido en rgb (rojo, verde, y azul).</span>
+}
+.interior{
+	width:250px;
+	height:250px;
+	border:solid;
+	margin:125px;
+	background-color:rgb(0,255,0);
+}
+.exterior1{
+	width:500px;
+	height:500px;
+	border:solid;
+	background-color:rgb(0,0,255);
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.interior1{
+	width:250px;
+	height:250px;
+	border:solid;
+	margin:125px;
+	background-color:rgba(0,255,0,0.6);  <span class="spcss">Valor definido en rgb (rojo, verde, azul, alfa).</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Background-image</span>, propiedad que especifica una imagen para usar como el fondo de un elemento.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.image{
+	background-repeat:no-repeat;  			<span class="spcss">Valor que hace no repetir la imagen.</span>
+	background-size:cover;	      			<span class="spcss">Valor que hace cubrir toda la caja con la imagen.</span>
+	background-image:url("../imagenes/image.jpg");  <span class="spcss">Propiedad que referencia una imagen con valor url.</span>
+}
+.image:hover{
+	background-repeat:no-repeat;
+	background-size:100% 100%;  <span class="spcss">Valor en % que hace cubrir toda la caja con la imagen.</span>
+	background-image:url("../imagenes/image1.jpg");
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Backgroung-repeat.</span> Por defecto, la imagen se repite de manera que cubra todo el elemento, tanto horizontal como verticalmente. Otros valores que le podemos dar son: "no-repeat", que no repite la imagen. "repeat-x" que repite en el eje horizontal y "repeat-y" que repite en el eje vertical.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.repeat{
+	background-image:url("../imagenes/image100.jpg");
+	background-repeat:repeat;  <span class="spcss">Valor por defecto que repite la imagen.</span>
+}
+.no-repeat{
+	background-image:url("../imagenes/image1100.jpg");
+	background-repeat:no-repeat;  <span class="spcss">Valor que hace no repetir la imagen.</span>
+}
+.x{
+	background-image:url("../imagenes/image100.jpg");
+	background-repeat:repeat-x;  <span class="spcss">Valor que repite la imagen en el eje horizontal.</span>
+}
+.y{
+	background-image:url("../imagenes/image1100.jpg");
+	background-repeat:repeat-y;<span class="spcss">Valor que repite la imagen en el eje vertical.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Backgroung-position</span>, especifica la posición de la imagen. Consta de dos valores, el primer valor referencia a right y left, y el segundo valor a top y bottom. "center center" nos centra la imagen, también podemos untilizar % y px. Se pueden combinar varios valores para mostrar la imagen en cualquier lado de la caja.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.position{
+	background-image:url("../imagenes/image1100.jpg");
+	background-position:center right;  <span class="spcss">El primer valor referencia a right y left, y el segundo valor a top y bottom.</span>
+	background-repeat:no-repeat;
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Backgroung-attachment</span>, especifica que la imagen de fondo sea fija o no 
+				(no se desplazará con el resto de la página)</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.attachment{
+	background-image:url("../imagenes/image1100.jpg");
+	background-position:left top;
+	background-repeat:no-repeat;
+	background-attachment:scroll;  <span class="spcss">Valor por defecto, la imagen no se mueve con el movimiento del scroll.</span>
+}
+.attachment{
+	background-image:url("../imagenes/image1100.jpg");
+	background-position:right top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;  <span class="spcss">Valor que hace que la imagen quede fija con el movimiento del scroll.</span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Background-size</span>, ajusta la imagen imagen de fondo a la caja.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.cover{
+	background-repeat:no-repeat; 
+	background-size:cover;  <span class="spcss">Valor que ajusta las imágenes que son más pequeña que la caja donde se encuentran.</span>
+	background-image:url("../imagenes/image.jpg");
+}
+.contain{
+	background-repeat:no-repeat; 
+	background-size:contain;  <span class="spcss">Valor que ajusta las imágenes que son más grandes que la caja donde se encuentran.</span>
+	background-image:url("../imagenes/image.jpg");
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Background-origin</span>, específica la posición de origen de una imagen de fondo. </p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.padding{
+	background-image:url("../imagenes/image1.jpg");
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-origin:padding-box;  <span class="spcss">Valor que posiciona la imagen desde el borde de la caja interior hacia dentro.</span>
+}
+.border{
+	background-image:url("../imagenes/image1.jpg");
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-size:cover;
+	background-origin:border-box;  <span class="spcss">Valor que posiciona la imagen desde el borde exterior de la caja hacia dentro. </span>
+}
+.content{
+	background-image:url("../imagenes/image1.jpg");
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-size:cover;
+	background-origin:content-box;  <span class="spcss">Valor que posiciona la imagen desde el padding que le asignamos. </span>
+}
+				</pre>
+			</div>
+			<div>
+				<p><span class="negrita">Background-clip</span>, específica hasta qué punto, el fondo debe extenderse dentro de una caja.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>.image1{
+	background-color:rgb(0,0,255);
+	background-clip:padding-box;  <span class="spcss">Valor que posiciona el color de la caja desde el borde de la caja interior hacia dentro.</span>
+}
+.image2{
+	background-color:rgb(0,0,255);
+	background-clip:border-box;  <span class="spcss">Valor que posiciona el color de la caja desde el borde exterior de la caja hacia dentro. </span>
+}
+.image3{
+	background-color:rgb(0,0,255);
+	background-clip:content-box;  <span class="spcss">Valor que posiciona el color de la caja desde el padding que le asignamos. </span>
+}
+				</pre>
+			</div>
+			<div>
+				<p>Se pueden referenciar dos o más rutas de imagen. Se colocan las rutas separadas por una coma.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>
+.variasImagenes{
+	background-image:url("../imagenes/tierra.png"),
+	url("../imagenes/agua.png"),url("../imagenes/viento.png"),
+	url("../imagenes/fuego.png"),	url("../imagenes/ball.png");
+	background-repeat:no-repeat;
+	background-position:left top, right top, right bottom, left bottom, center;
+}
+				</pre>
+			</div>
+			<div id="hover">
+				<a href="css/background/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			</div>
+			<hr/>
+			<h3>Hover</h3>
+			<div>
+				<p>El selector hover: activable se utiliza para seleccionar elementos al pasar el ratón sobre ellos. Se puede utilizar en todos los elementos, no sólo en los enlaces. Se hace activo utilizando hover: seguido del elemento sobre el que se quiere activar el cambio.</p>
+			</div>
+			<h5>Ejemplo:</h5>
+			<div>
+				<pre>#red{
+	background-image:url("../imagenes/semaforo.jpg");
+}
+#red:hover{
+	background-image:url("../imagenes/rojo.jpg");
+}
+				</pre>
+			</div>
+			<a id="visual" href="css/hover/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<hr/>
+			<h3>Visualización</h3>
+			<div>
+				<h4>Display</h4>
+				<p>La propiedad display especifica el comportamiento de presentación de un elemento. El valor de la propiedad de visualización por defecto es en línea. Con los diferentes valores que se pueden asignar a la propiedad; block, inline, none, etc. hace que el comportamiento de los elementos cambie, por ejemplo un elemento de línea pase a bloque o al revés.</p>
+			</div>
+			<div>
+				<h4>Visibility</h4>
+				<p>Propiedad que especifica si un elemento es visible o no. El valor por defecto es visible y con hidden hace que el elemeto sea invisible, pero el resto de elementos respetan su espacio.</p>
+			</div>
+			<div>
+				<h4>Overflow</h4>
+				<p>La propiedad overflow especifica qué debe ocurrir si el contenido sobresale de la caja de un elemento. Esta propiedad especifica si se recorta el contenido o añadir barras de desplazamiento cuando el contenido de un elemento es demasiado grande para caber en un área especifica. Sólo funciona para elementos de bloque con una altura especifica.</p>
+				<p id="posicion">Los diferentes valores que se pueden utilizar son: visible, hidden, scroll, auto, etc.</p>
+			</div>
+			<hr/>
+			<h3>Posicionamiento</h3>
+			<div>
+				<h4>Position</h4>
+				<p>Propiedad que especifica el tipo de método de posicionamiento utilizado para un elemento. Los valores que se pueden asignar son: static, por defecto; relative, absolute, fixed, sticky, etc. </p>
+			</div>
+			<div>
+				<h4>Opacity</h4>
+				<p>La propiedad opacity establece el nivel de opacidad de un elemento. El nivel de opacidad describe el nivel de transparencia, donde 1 no es transparente en absoluto, 0,5 es 50% ver a través, y 0 es completamente transparente.</p>
+			</div>
+			<div>
+				<h4>Z-index</h4>
+				<p>Propiedad que especifica el orden de lugar de un elemento. Un elemento con mayor orden de lugar está siempre en frente de un elemento con un orden de lugar inferior. Z-index sólo funciona en elementos posicionados, posición absoluta, relativa, o fija.</p>
+			</div>
+			<div>
+				<h4>Float</h4>
+				<p id="menus">La propiedad float especifica cómo un elemento debe flotar. Los elementos pasan a otra dimensión, hacia la izquierda (left), hacia la derecha (right) o por defecto sin flotar (none).</p>
+			</div>
+			<hr/>
+			<h3>Menús desplegables</h3>
+			<div>
+				<h4>Menú horizontal</h4>
+			</div>
+			<a href="#menus"><h5 class="ejemplo">Ejemplo</h5></a>
+			<div>
+				<h4>Menú vertical</h4>
+			</div>
+			<a href="#menus"><h5 class="ejemplo">Ejemplo</h5></a>
+			<div id="transiciones">
+				<h4>Menú hamburguesa</h4>
+			</div>
+			<!-- <div class="hamburguesa">
+			<div class="img"></div>
+			<nav class="visible">
+				<ul class="menu">
+					<li><a href="#">MENU 1</a></li>
+					<li><a href="#">MENU 2</a></li>
+					<li><a href="#">MENU 3</a></li>
+					<li><a href="#">MENU 4</a></li>
+				</ul>
+			</nav>
+		</div> -->
+			<a href="#menus"><h5 class="ejemplo">Ejemplo</h5></a>
+			<hr/>
+			<h3>Transiciones</h3>
+			<div>
+				<p>La propiedad transición es una propiedad abreviada para las cuatro propiedades de transición:</p>
+				<ul>
+					<li class="lista">Transición de propiedad</li>
+					<li class="lista">Duración de la transición</li>
+					<li class="lista">Transición-timing-function</li>
+					<li class="lista">Transición de retardo</li>
+				</ul>
+				<p id="animaciones">Se suele utilizar para variar la transición de :hover. Siempre se especifica la transición de la duración de la propiedad, de lo contrario la duración es 0s, y la transición no tendrá ningún efecto.</p>
+			</div>
+			<a href="#animaciones"><h5 class="ejemplo">Ejemplo</h5></a>
+			<hr/>
+			<h3>Animaciones</h3>
+			<div>
+				<p>La animación CSS permite la animación de la mayoría de los elementos HTML sin necesidad de utilizar JavaScript.</p>
+				<p>Una animación permite a un elemento cambiar gradualmente de un estilo a otro. Se puede cambiar tantas propiedades CSS que se desee. Para utilizar la animación CSS, primero debe especificar algunos fotogramas clave para la animación, como especificar estilos CSS dentro de la norma @keyframes, la animación cambiará gradualmente desde el estilo actual al nuevo estilo en determinados momentos.</p>
+				<p>Se pueden asignar varias propiedades para ejecutar la animación, por ejemplo: animation-delay, animation-direction, animation-duration, animation-timing-function, etc.</p>
+			</div>
+			<a id="transform" href="css/animacion/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<hr/>
+			<h3>Transform</h3>
+			<div>
+				<p>La propiedad transform aplica una transformación 2D o 3D a un elemento. Esta propiedad le permite rotar, escalar, mover, etc.</p>
+			</div>
+			<a href="#transform"><h5 class="ejemplo">Ejemplo</h5></a>
+			<hr/>
+			<h3>Responsive</h3>
+			<div>
+				<p>Diseño web adaptable o Responsive Web Design (RWD). El objetivo del diseño web adaptable es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en multitud de dispositivos como tabletas, teléfonos inteligentes, libros electrónicos, portátiles, PC, etcétera. Además, aún dentro de cada tipo, cada dispositivo tiene sus características concretas: tamaño de pantalla, resolución, potencia de CPU, sistema operativo o capacidad de memoria entre otras. Esta tecnología pretende que con un único diseño web, todo se vea correctamente en cualquier dispositivo.</p>
+			</div>
+			<a id="responsive" href="css/responsive1/index.html"><h5 class="ejemplo">Visualiza un ejemplo aquí</h5></a>
+			<div class="inicio">
+				<a href="#"><img src="imagenes/flechacss.png" alt="Ir arriba" title="Ir arriba" width="40"/></a>
+			</div>
+		</main>
+		<footer class="fcss">
+			<div class="valido">
+				<a href="https://jigsaw.w3.org/css-validator" target="_blank">
+				<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" title="¡CSS Válido!"/></a>
+			</div>
+			<div class="copy">
+				&copy;Confección y publicación de páginas web 2018.
+			</div>
+		</footer>
+	</body>
+</html>

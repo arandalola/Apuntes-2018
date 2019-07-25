@@ -1,0 +1,268 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i');
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	outline:none;
+}
+header{
+	width:100%;
+}
+main{
+	margin:0 110px 60px 110px;
+}
+footer{
+	height:60px;
+}
+.menu{
+	font-family: 'Baloo Bhaina', cursive;
+	text-transform:uppercase;
+}
+.div1{
+	overflow:hidden;
+}
+.logo{
+	margin:30px 40px 30px 40px;
+	float:left;
+}
+.cap{
+	margin:60px 40px 0 40px;
+	float:right;
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Baloo Bhaina', cursive;
+}
+h1{
+	font-size:60px;
+}
+h2{
+	font-size:40px;
+	text-decoration:underline;
+	margin-top:25px;
+}
+h3{
+	font-size:25px;
+	margin-top:30px;
+	text-decoration:underline;
+	text-align:center;
+}
+h4{
+	font-size:20px;
+	margin-left: 50px;
+	margin-top:25px;
+}
+h5{
+	margin-top:30px;
+	font-size: 20px;
+	background-image:url("../imagenes/");
+	background-position:left;
+	background-repeat:no-repeat;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+.spcss{
+	color:#0070ba;
+}
+.sphtml{
+	color:#e44d26;
+}
+p{
+	margin:10px 0px;
+	line-height:1.5em;
+	font-size:22px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	text-indent:50px;
+}
+pre{
+	font-family: 'Ubuntu Mono', monospace;
+	font-size:20px;
+	margin:20px 0 20px 29px;
+}
+.pre{
+	width:400px;
+	margin:0 auto;
+}
+.inicio{
+	position:fixed; 
+	right:10px;
+	bottom:65px;
+}
+.copy{
+	float:left;
+	padding-top:25px;
+	margin-left:25px;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size:12px;
+	font-weight:bold;
+}
+.valido{
+	float:right;
+	padding-top:15px;
+	margin-right:25px;
+}
+.strong{
+	color:#000;
+	font-weight:bolder;
+}
+.ancla:before{
+	display:block;
+	content:"";
+	margin-top:-50px;
+	height:50px;
+	visibility:hidden;
+}
+hr{
+	margin-top:40px;
+	color:#2196f3;
+}
+.negrita{
+	font-weight:bold;
+}
+/*PÁGINA INDEX*/
+.findex{
+	background-image:url("../imagenes/fondos/fondo4.jpg");
+	background-position:center;
+	background-size:cover;
+}
+.index{
+	width: 100vw;
+    height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+}
+area{
+	outline:none;
+}
+/*PÁGINA HTML*/
+.bhtml{
+	background-color:#FFE0CC;
+}
+.hhtml{
+	background-image:url("../imagenes/fondos/fondo4.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.mhtml{
+	background-image:url("../imagenes/logos/mainhtml.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+.fhtml{
+	background-image:url("../imagenes/fondos/fondo4.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.ahtml{
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:25px;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size:20px;
+}
+.enlace{
+	font-style:italic;
+}
+.ahtml a:hover, .enlace:hover{
+	color:#e44d26;
+	text-decoration:underline;
+}
+/*PÁGINA CSS*/
+.bcss{
+	background-color:#D9E8F7;
+}
+.hcss{
+	background-image:url("../imagenes/fondos/fondo4.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.mcss{
+	background-image:url("../imagenes/logos/maincss.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+   	margin: 0 60px 0 60px;
+} 
+.fcss{
+	background-image:url("../imagenes/fondos/fondo4.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.lista{
+	list-style:disc;
+	margin:20px 0 20px 80px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:20px;
+}
+.margin{
+	text-align:center;
+	margin-top:30px;
+}
+.iframe{
+	display:flex;
+	justify-content:space-around;
+	margin-bottom:30px;
+}
+.iframe iframe{
+	box-shadow: 5px -5px 10px 0px #c1c1c1;
+   border: 1px solid #c1c1c1;
+}
+.ejemplo{
+	font-style:italic;
+	text-align:right;
+}
+.ejemplo:hover{
+	color:#0070ba;
+	text-decoration:underline;
+}
+.caja{
+	width:320px;	
+	height:160px;
+	padding:10px;
+	border:5px solid grey;
+	margin:0 auto; 
+	text-align:center;
+	line-height:120px;
+	font-style:italic;
+	color:#0070ba;
+	font-size:20px;
+}
+/*JAVASCRIPT*/
+.bjs{
+	background-color:#E6FFE6;
+}
+.hjs{
+	background-image:url("../imagenes/fondos/fondo4.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.mjs{
+	background-image:url("../imagenes/logos/mainjs.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+} 
+.fjs{
+	background-image:url("../imagenes/fondos/fondo4.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}

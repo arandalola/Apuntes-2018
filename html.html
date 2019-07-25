@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="imagenes/logos/favicon.jpg"/>
+		<link rel="stylesheet" href="style/minireset.css"/>
+		<link rel="stylesheet" href="style/base.css"/>
+		<link rel="stylesheet" href="style/style.css"/>
+		<link rel="stylesheet" href="style/responsive.css"/>
+		<title>HTML</title>
+	</head>
+	<body class="bhtml">
+		<header class="hhtml">
+			<div class="div1">
+				<div class="logo">
+					<a href="index.html"><img src="imagenes/logos/html.png" alt="Logo" title="Logo" width="150"/></a>
+				</div>
+				<div class="cap">
+					<h1>HTML5</h1>
+				</div>
+			</div>
+		</header>
+		<nav class="navHorizontal hHorizontal sticky top0 zindex ancho100">
+			<ul class="flex centrarHLinea negrita menu">
+				<li class="ancho100 lihtml"><a href="#html">Estructura básica HTML5</a></li>
+				<li class="relative ancho100 mostrarLista lihtml"><a href="#etiquetas">Etiquetas HTML5</a>
+					<ul class="ocultar absolute ancho100">
+						<li class="lihtml"><a href="#bloque">Elementos de bloque</a></li>
+						<li class="lihtml"><a href="#linea">Elementos de línea</a></li>
+					</ul>
+				</li>
+				<li class="ancho100 lihtml"><a href="#form">Formularios</a></li>
+			</ul>
+		</nav>
+		<main class="mhtml">
+			<div id="html" class="ancla"></div>
+			<h2>Estructura básica HTML5</h2>
+			<div>
+				<p>HTML, significa Lenguaje de Marcado para Hipertextos (HyperText Markup Language), es el lenguaje utilizado para describir y definir el contenido de una Página Web en un formato bien estructurado. Es el elemento de construcción más básico de una página web y se usa para crear y representar visualmente una página web. Determina el contenido de la página web, pero no su funcionalidad. Otras tecnologías distintas de HTML son usadas generalmente para describir la apariencia/presentación de una página web (CSS) o su funcionalidad (JavaScript).</p>
+				<p>HTML le da "valor añadido" a un texto estándar en español. Hiper Texto se refiere a enlaces que conectan una página Web con otra, ya sea dentro de una página web o entre diferentes sitios web. Los vínculos son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a páginas de otras personas, te haces participante activo de esta Red Mundial.</p>
+				<p>HTML usa "markup" o marcado para anotar textos, imágenes, y otros contenidos que se muestran en el Navegador Web. El lenguaje de marcado HTML incluye "elementos" especiales tales como &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, y muchos otros más.</p>
+			</div>
+			<h4>Estructura básica de HTML5:</h4>
+			<div class="pre">
+				<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;title&gt;Document&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+				</pre>
+			</div>
+			<div id="etiquetas" class="ancla"></div>
+			<h2 class="h2">Etiquetas HTML5</h2>
+			<div>
+				<p>Esta página lista <a class="enlace"href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento" target="_blank">todas las etiquetas HTML.</a> Están agrupados por elementos básicos; metadatos del documento, seccionamiento del contenido, contenido del texto, tipos de enlaces, imagen y multimedia, tablas de contenido, etc. para ayudarte a encontrar lo que tienes en mente con facilidad.</p>
+			</div>
+			<div id="bloque" class="ancla"></div>
+			<h3>Elementos de bloque</h3>
+			<div>
+				<p>Los elementos en HTML usualmente son elementos "en bloque" o elementos "en línea". Un elemento en bloque ocupa todo el espacio de su elemento padre (contenedor), creando así un "bloque". Los navegadores suelen mostrar el elemento a nivel de bloque con un salto de línea antes y después del elemento. Los elementos de bloque sólo deben aparecer dentro del elemento &lt;body&gt;.</p>
+				<p>A continuación vemos algunos ejemplos de etiquetas en bloque. </p>
+			</div>
+			<div class="ahtml">
+				<a href="html/article.html">&lt;article&gt;</a>
+				<a href="html/aside.html">&lt;aside&gt;</a>
+				<a href="html/audio.html">&lt;audio&gt;</a>
+				<a href="html/div.html">&lt;div&gt;</a>
+				<a href="html/footer.html">&lt;footer&gt;</a>
+				<a href="html/h1ah6.html">&lt;h1 a h6&gt;</a>
+				<a href="html/header.html">&lt;header&gt;</a>
+				<a href="html/hr.html">&lt;hr&gt;</a>
+				<a href="html/li.html">&lt;li&gt;</a>
+				<a href="html/main.html">&lt;main&gt;</a>
+				<a href="html/nav.html">&lt;nav&gt;</a>
+				<a href="html/ol.html">&lt;ol&gt;</a>
+				<a href="html/p.html">&lt;p&gt;</a>
+				<a href="html/pre.html">&lt;pre&gt;</a>
+				<a href="html/section.html">&lt;section&gt;</a>
+				<a href="html/table.html">&lt;table&gt;</a>
+				<a href="html/ul.html">&lt;ul&gt;</a>
+			</div>
+			<div id="linea" class="ancla"></div>
+			<h3>Elementos de línea</h3>
+			<div>
+				<p>Los elementos en HTML usualmente son elementos "en línea" o elementos "en bloque". Un elemento en línea ocupa sólo el espacio delimitado por las etiquetas que definen el elemento en línea. Los elementos de línea sólo deben aparecer dentro del elemento &lt;body&gt;.</p>
+				<p>A continuación vemos algunos ejemplos de etiquetas en línea. </p>
+			</div>
+			<div class="ahtml">
+				<a href="html/a.html">&lt;a&gt;</a>
+				<a href="html/abbr.html">&lt;abbr&gt;</a>
+				<a href="html/ancla.html">&lt;ancla&gt;</a>
+				<a href="html/br.html">&lt;br&gt;</a>
+				<a href="html/code.html">&lt;code&gt;</a>
+				<a href="html/em.html">&lt;em&gt;</a>
+				<a href="html/id.html">&lt;id&gt;</a>
+				<a href="html/iframe.html">&lt;iframe&gt;</a>
+				<a href="html/img.html">&lt;img&gt;</a>
+				<a href="html/ins.html">&lt;ins&gt;</a>
+				<a href="html/mark.html">&lt;mark&gt;</a>
+				<a href="html/small.html">&lt;small&gt;</a>
+				<a href="html/span.html">&lt;span&gt;</a>
+				<a href="html/strong.html">&lt;strong&gt;</a>
+				<a href="html/sub.html">&lt;sub&gt;</a>
+				<a href="html/sup.html">&lt;sup&gt;</a>
+				<a href="html/video.html">&lt;video&gt;</a>
+			</div>
+			<div id="form" class="ancla"></div>
+			<h2>Formularios</h2>
+			<div>
+				<p>Los formularios HTML son uno de los puntos principales de interacción entre un usuario y un sitio web o aplicación. Ellos permiten a los usuarios enviar información a un sitio web. La mayor parte de las veces se envía información a un servidor web.</p>
+				<p>Un formulario HTML está hecho de uno o más inputs. Estos inputs puede ser campos de texto (de una linea o multilínea), cajas de selección, botones, checkboxes, o botones de radio. La mayoría del tiempo, estos input están junto a un label que describe su propósito.</p>
+				<p>Antes de comenzar a escribir código, es siempre mejor dar un paso atrás y tomarse el tiempo de pensar tu formulario. Diseñar un boceto te ayudará a definir el correcto conjunto de información que quieres preguntarle a tu usuario. Desde un punto de vista de experiencia del usuario, es importante recordar que mientras más grande sea tu formulario, mayor será el riesgo de perder usuarios. Mantenlo simple y mantén el foco: pregunta solamente lo que necesitas. Diseñar formularios es un paso importante cuando estés construyendo tu sitio o aplicación.</p>
+				<p>Todos los formularios HTML comienzan con el elemento &lt;form&gt;&lt;/form&gt;, este elemento define formalmente un formulario, es un contenedor, puede contener atributos específicos para configurar la forma del formulario. Todos sus atributos son opcionales pero action y method son obligatorios para una buena práctica.</p>
+				<ul>
+					<li class="lista">El atributo action define la URL desde donde la información recolectada por el formulario debería enviarse.</li>
+					<li class="lista">El atributo method define con que método HTTP se enviará la información, puede ser "get" o "post", se recomienda "post". </li>
+				</ul>
+				<p>Los elementos &lt;div&gt; pueden ayudar a estructurar nuestro código de forma conveniente y poder darles estilos de una forma más sencilla. Es obligatorio el uso del atributo for en todos los elementos &lt;label&gt;; es la forma correcta de unir un label a un input en un formulario. Este atributo referencia el id del input correspondiente. Hay algunos beneficios de hacer esto, como permitir al usuario hacer click en el label para activar el input correspondiente.</p>
+				
+				<p>En el elemento &lt;input&gt;, el atributo mas importante es type. Este atributo es sumamente importante porque define la forma en que el elemento &lt;input&gt; se comporta. Puede cambiar radicalmente el elemento. El valor text, el valor por defecto de este atributo, representa un campo de texto básico de una linea que acepta cualquier tipo de texto sin ningún control o validación.<a class="enlace" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets">Puede ver la lista de atributos y valores completos aquí.</a></p>
+			<div class="inicio">
+				<a href="#"><img src="imagenes/flechahtml.png" alt="Ir arriba" title="Ir arriba" width="35"/></a>
+			</div>
+		</main>
+		<footer class="fhtml">
+			<div class="valido">
+				<a href="https://jigsaw.w3.org/css-validator" target="_blank">
+				<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" title="¡CSS Válido!"/></a>
+			</div>
+			<div class="copy">
+				&copy;Confección y publicación de páginas web 2018.
+			</div>
+		</footer>	
+	</body>
+</html>

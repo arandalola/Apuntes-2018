@@ -1,0 +1,190 @@
+/*MENU HAMBURGUESA*/
+.oculto{
+	left:-999em;
+}
+.fondoBurguer{
+	width:50px;
+	height:50px;
+	background-image:url("../imagenes/menu.png");
+	background-repeat:no-repeat;
+	margin:25px;
+}
+.menuVertical li{
+	border-bottom:5px solid #3f51b5;
+}
+:checked ~ .fondoBurguer{
+	background-image:url("../imagenes/cerrar.png");
+}
+:checked ~ .click{
+	visibility:visible;
+	opacity:1;
+}
+/*FIN MENU HAMBURGUESA*/
+/*MENU VERTICAL Y HORIZONTAL*/
+nav li{
+	line-height:auto;/*lo uso para centrar verticalmente un texto dentro de un contenedor*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+.lihtml{
+	background-color:#e44d26;
+}
+.licss{
+	background-color:#0070ba;
+}
+.lijs{
+	background-color:#63a814;
+}
+nav li:hover ul{
+	display:block;
+}
+/* .navHorizontal li{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+.navHorizontal li li{
+	border-bottom:1px solid #000;
+} */
+/*FIN MENU VERTICAL Y HORIZONTAL*/
+.alto100{
+	height:100%;
+}
+.max100{
+	max-width:100%;
+}
+.ancho100{
+	width:100%;
+}
+.ancho90{
+	width:90%;
+}
+.ancho80{
+	width:80%;
+}
+.ancho75{
+	width:75%;
+}
+.ancho70{
+	width:70%;
+}
+.ancho60{
+	width:60%;
+}
+.ancho50{
+	width:50%;
+}
+.ancho40{
+	width:40%;
+}
+.ancho33{
+	width:33.33%;
+}
+.ancho30{
+	width:30%;
+}
+.ancho25{
+	width:25%;
+}
+.ancho20{
+	width:20%;
+}
+.ancho10{
+	width:10%;
+}
+.centrarHBloque{
+	margin-left:auto;
+	margin-right:auto;
+}
+.centrarHLinea{
+	text-align:center;
+}
+.alinearVertical{
+	vertical-align:middle;/*centra verticalmente respecto a otro elemento*/
+}
+.floatLeft{
+	float:left;
+}
+.floatRight{
+	float:right;
+}
+.border{
+	border:1px solid #000;
+}
+.borderRadius{
+	border-radius:5px;
+}
+.sombraBlur{
+	box-shadow:0 0 1px #666;
+}
+.displayNone{
+	display:none;
+}
+.bloque{
+	display:block;
+}
+.linea{
+	display:inline;
+}
+.flex{
+	display:flex;
+}
+.repartirEspacio{
+	justify-content:space-around;/*siempre va con el display:flex*/
+}
+.centrarHFlex{
+	justify-content:center;
+}
+.overflowH{
+	overflow:hidden;/*para que el header se redimensiones cuando los elementos que contiene están flotando*/
+}
+.fixed{
+	position:fixed;
+}
+.relative{
+	position:relative;
+}
+.absolute{
+	position:absolute;
+}
+.sticky{
+	position:sticky;/*se debe dar la altura top0*/
+}
+.top0{
+	top:0;
+}
+.zindex{
+	z-index:9999;
+}
+.zindex-{
+	z-index:-9999;
+}
+.ocultar{
+	visibility:hidden;
+	opacity:0;
+}
+.mostrarLista:hover ul{
+	visibility:visible;
+	opacity:1;
+}
+nav ul li a{
+	display:block;
+}
+.textoTransparente{
+	color:transparent;
+}
+.letraMini{
+	font-size:0.1px;
+}
+.negrita{
+	font-weight:bold;
+}
+.cursiva{
+	font-style:italic;
+}
+.subrayar{
+	text-decoration:underline;
+}
+.pointer{
+	cursor:pointer;
+}

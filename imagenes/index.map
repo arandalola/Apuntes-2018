@@ -1,0 +1,15 @@
+<img src="[web] (importada)" width="700" height="300" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Profesor -->
+<area shape="poly" coords="2,53,225,53,204,285,137,301,83,302,21,284,0,54" href="html.html" />
+<area shape="rect" coords="20,1,204,35" href="html.html" />
+<area shape="rect" coords="284,1,416,35" href="css.html" />
+<area shape="poly" coords="237,53,461,53,442,282,378,300,314,300,257,286,236,53" href="css.html" />
+<area shape="poly" coords="476,53,700,54,679,282,616,302,554,301,495,282,474,54" href="js.html" />
+<area shape="rect" coords="542,0,630,34" href="js.html" />
+</map>

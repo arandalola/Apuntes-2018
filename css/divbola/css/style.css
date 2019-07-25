@@ -1,0 +1,18 @@
+/*La propiedad border radius hace que la caja se muestre como un círculo.*/
+/*La propiedad text-align sirve para centrar el texto dentro de su caja*/
+/*Con la propiedad y valor, margin:auto; se centran los elementos de bloque.*/
+/*La propiedad width y height deben ser las mismas cuando hacemos un círculo,y el border -radius siempre tiene que ser la mitad del valor que le hemos dado a las propiedades de width y height*/
+.bola{
+	width:1000px;
+	height:1000px;
+	border:10px solid blue;
+	background:green;
+	text-align:center;
+	margin:50px auto;
+	border-radius:500px;
+}
+p{
+	width:500px;
+	margin:50px auto;
+}
+

@@ -1,0 +1,106 @@
+/*DISPLAY*/
+main h3:first-child+div{
+	width:500px;
+	height:200px;
+	background-color:red;
+	margin:50px auto;
+}
+.green > div{
+	width:300px;
+	height:150px;
+	background-color:green;
+	display:none;
+	margin:0 auto;
+}
+main > div:hover .hover{
+	display:block;
+}
+div + p{
+	font-size:50px;
+	text-align:center;
+}
+p + div{
+	height:100px;
+	font-size:47px;
+	text-align:center;
+	border-radius:20px 20px 20px 20px;
+	padding-top:25px;
+}
+p + div:hover + p{
+	display:block;
+}
+div + p + p + p{
+	font-size:50px;
+	text-align:center;
+}
+div + p + p{
+	display:none;
+	font-size:50px;
+	text-align:center;
+}
+p:hover + p{
+	display:block;
+}
+div + p + p + p + div + p{
+	display:none;
+}
+main{
+	margin-bottom:200px;
+}
+/*VISIBILITY*/
+.div1{
+	width:500px;
+	height:200px;
+	border:solid;
+	margin:10px auto;
+}
+.div2{
+	width:500px;
+	height:200px;
+	border:solid;
+	visibility:hidden;
+	margin:0 auto;
+}
+.div1:hover +.div2{
+	visibility:visible;
+}
+/*OVERFLOW*/
+.overflow{
+	width:1100px;
+	margin:0 auto;
+}
+.visible{
+	width:250px;
+	height:300px;
+	border:solid;
+	overflow:visible;
+	float:left;
+	margin-left:15px;
+}
+.hidden{
+	width:250px;
+	height:300px;
+	border:solid;
+	overflow:hidden;
+	float:left;
+	margin-left:15px;
+}
+.scroll{
+	width:250px;
+	height:300px;
+	border:solid;
+	overflow:scroll;
+	float:left;
+	margin-left:15px;
+}
+.auto{
+	width:250px;
+	height:300px;
+	border:solid;
+	overflow:auto;
+	float:left;
+	margin-left:15px;
+}
+.centrado{
+	text-align:center;
+}

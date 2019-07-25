@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i');
+h2{
+	font-family: 'Baloo Bhaina', cursive;
+	font-size:40px;
+	padding-top:30px;
+	margin:0 60px 60px 60px;
+}
+.hamburguesa{
+	height:270px;
+	width:10%;
+	text-align:center;
+	margin:0 auto;
+}
+.hamburguesa:hover nav{
+	display:block;
+}
+.menu li{
+	border:1px solid;
+}
+.img{
+	height:50px;
+	width:50px;
+	margin-left:20px;
+	background:url("../imagenes/menu.png")no-repeat;
+	background-size:cover;
+}
+.visible{
+	display:none;
+	background-image:none;
+}
+.visible .menu{
+	display:block;
+	position:relative;
+	left:21px;
+}
+.visible .menu li{
+	width:100%;
+}

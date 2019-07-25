@@ -1,0 +1,69 @@
+.e1{
+	font-family: 'Pacifico', cursive;
+	font-size:50px;
+}
+.e2{
+	font-family: 'Butterfly Kids', cursive;
+	font-size:50px;
+}
+.e3{
+	font-family: 'Hanalei Fill', cursive;
+	font-size:50px;
+}
+.e4{
+	font-family: 'Bungee Outline', cursive;
+	font-size:50px;
+}
+.e5{
+	font-family: 'Flavors', cursive;
+	font-size:50px;
+}
+.e6{
+	font-family: 'Ewert', cursive;
+	font-size:50px;
+}
+.tipo{
+	letter-spacing:2px;
+	line-height:2em;
+	font-variant:small-caps;
+	font-weight:900;
+}
+.font{
+	font:italic small-caps lighter 30px/1.5 Ewert;
+}
+.underline{
+	text-decoration-line:underline;
+	text-transform:uppercase;
+}
+.overline{
+	text-decoration-line:overline;
+	text-transform:lowercase;
+}
+.linethrough{
+	text-decoration-line:line-through;
+	text-transform:capitalize;
+}
+.color{
+	text-decoration-line:underline;
+	text-decoration-color:blue;
+}
+.wavy{
+	text-decoration-style:wavy;
+}
+.solid{
+	text-decoration-line:overline;
+	text-decoration-style:solid;
+}
+.dotted{
+	text-decoration-line:overline;
+	text-decoration-style:dotted;
+}
+.double{
+	text-decoration-line:overline;
+	text-decoration-style:double;
+}
+.dashed{
+	text-decoration-line:overline;
+	text-decoration-style:dashed;
+}
+

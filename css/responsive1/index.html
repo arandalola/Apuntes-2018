@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Formulario 1</title>
+		<link rel="shortcut icon" href="imagenes/favicon.jpg"/>
+		<link rel="stylesheet" href="../../style/style.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body class="bcss">
+		<header class="hcss">
+			<div class="div1">
+				<div class="logo">
+					<a href="index.html"><img src="../imagenes/css.png" alt="Logo" title="Logo" width="150"/></a>
+				</div>
+				<div class="cap">
+				<h1>CSS3</h1>
+				</div>
+			</div>
+		</header>
+		<main class="mcss">
+			<h1>Formulario</h1>
+			<form method="post" enctype="multipart/form-data" action="xxx" name="formulario">
+				<div>
+					<fieldset class="datos">
+						<legend>Datos personales</legend>
+						<div>
+							<div>
+								<label for="nombre">Nombre</label>
+								<input type="text" name="nombre" placeholder="Nombre" maxlength="50" id="nombre"/>
+							</div>
+							<div>
+								<label for="apellido1">1º Apellido</label>
+								<input type="text" name="1apellido" placeholder="Primer apellido" maxlength="50" id="apellido1"/>
+							</div>
+							<div>
+								<label for="apellido2">2º Apellido</label>
+								<input type="text" name="2apellido" placeholder="Segundo apellido" maxlength="50" id="apellido2"/>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<fieldset class="direccion">
+						<legend>Dirección</legend>
+						<div class="dire">
+							<div>
+								<label for="via">Tipo de vía</label>
+								<select name="via" id="via">
+									<option value="1">Calle</option>
+									<option value="2">Avenida</option>
+									<option value="3">Plaza</option>
+								</select>
+								<input type="text" name="via" placeholder="Nombre de la vía"/>
+							</div>
+							<div>
+								<label for="numero">Nº</label>
+								<input type="text" name="numero" id="numero" size="2"/>
+							</div>
+							<div>
+								<label for="letra">Letra</label>
+								<select name="letra" id="letra">
+									<option value="1">A</option>
+									<option value="2">B</option>
+									<option value="3">C</option>
+								</select>
+							</div>
+							<div>
+								<label for="piso">Piso</label>
+								<input type="text" name="piso" id="piso" size="2"/>
+							</div>
+							<div>
+								<label for="puerta">Puerta</label>
+								<input type="text" name="puerta" id="puerta" size="2"/>
+							</div>
+						</div>
+						<div>
+							<div>
+								<label for="postal">Código Postal</label>
+								<input type="text" name="postal" id="postal" size="5"/>
+							</div>
+							<div>
+								<label for="poblacion">Población</label>
+								<input type="text" name="poblacion" id="poblacion" size="23"/>
+							</div>
+							<div>
+								<label for="provincia">Provincia</label>
+								<select name="provincia" id="provincia">
+									<option value="1">Valencia</option>
+									<option value="2">Alicante</option>
+									<option value="3">Castellón</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<fieldset class="foto">
+						<legend>Foto</legend>
+						<div>
+							<input type="file" name="foto"/>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<fieldset class="aficiones">
+						<legend>Aficiones</legend>
+						<div>
+							<div>
+								<label for="cine">Cine</label>
+								<input type="checkbox" name="aficiones[]" value="cine" id="cine"/>
+							</div>
+							<div>
+								<label for="musica">Música</label>
+								<input type="checkbox" name="aficiones[]" value="Música" id="musica"/>
+							</div>
+							<div>
+								<label for="teatro">Teatro</label>
+								<input type="checkbox" name="aficiones[]" value="teatro" id="teatro"/>
+							</div>
+							<div>
+								<label for="dormir">Dormir</label>
+								<input type="checkbox" name="aficiones[]" value="dormir" id="dormir"/>
+							</div>
+							<div>
+								<label for="lectura">Lectura</label>
+								<input type="checkbox" name="aficiones[]" value="lectura" id="lectura"/>
+							</div>
+							<div>
+								<label for="deporte">Deporte</label>
+								<input type="checkbox" name="aficiones[]" value="deporte" id="deporte"/>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<fieldset class="estado">
+						<legend>Estado civil</legend>
+						<div>
+							<div>
+								<label for="soltero">Solter@</label>
+								<input type="radio" name="estado" value="soltero" id="soltero"/>
+							</div>
+							<div>
+								<label for="separado">Separad@</label>
+								<input type="radio" name="estado" value="separado" id="separado"/>
+							</div>
+							<div>
+								<label for="casado">Casad@</label>
+								<input type="radio" name="estado" value="casado" id="casado"/>
+							</div>
+							<div>
+								<label for="divorciado">Divorciad@</label>
+								<input type="radio" name="estado" value="divorciado" id="divorciado"/>
+							</div>
+							<div>
+								<label for="arrejuntado">Arrejuntad@</label>
+								<input type="radio" name="estado" value="arrejuntado" id="arrejuntado"/>
+							</div>
+							<div>
+								<label for="viudo">Viud@</label>
+								<input type="radio" name="estado" value="viudo" id="viudo"/>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<fieldset class="contacto">
+						<legend>Contacto</legend>
+						<div>
+							<div>
+								<label for="mail">E-mail</label>
+								<input type="email" name="mail" placeholder="Introduzca e-mail" id="mail"/>
+							</div>
+							<div>
+								<label for="phone">Teléfono</label>
+								<input type="tel" name="phone" placeholder="Introduzca nº de teléfono" maxlength="9" id="phone"/>
+							</div>
+							<div>
+								<label for="web">Web</label>
+								<input type="text" name="web" placeholder="Introduzca web" id="web"/>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<fieldset class="observaciones">
+						<legend>Obsevaciones</legend>
+						<div class="obs">
+							<textarea name="observaciones" placeholder="Escriba sus observaciones o comentarios" rows="10" cols="50"></textarea>
+						</div>
+					</fieldset>
+				</div>
+				<div class="fin">
+					<input type="submit" value="Guardar"/>
+					<input type="reset" value="Borrar"/>
+				</div>
+			</form>
+		</main>
+		<div class="flechaa">
+				<a  href="../../css.html#responsive"> <img src="../imagenes/flecha.png" alt="Volver" title="Volver" width="35" height="35"
+				/></a>
+			</div>
+			<div class="inicio">
+				<a href="#"><img src="../imagenes/flechacss.png" alt="Ir arriba" title="Ir arriba" width="40"/></a>
+			</div>
+		</main>
+		<footer class="fcss">
+			<div class="valido">
+				<a href="https://jigsaw.w3.org/css-validator" target="_blank">
+				<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" title="¡CSS Válido!"/></a>
+			</div>
+			<div class="copy">
+				&copy;Confección y publicación de páginas web 2018.
+			</div>
+		</footer>
+	</body>
+</html>
